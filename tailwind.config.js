@@ -23,7 +23,7 @@ export default {
     },
     fontFamily: {
       'heading': ["Open Sans", "sans-serif"],
-      'paragraph': ["Edu AU VIC WA NT Guides", "cursive"]
+      'paragraph': ["Playwrite DE Grund", "cursive"]
     },
     colors: {
       'primary_color': '#EC018B',

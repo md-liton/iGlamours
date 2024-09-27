@@ -9,7 +9,7 @@ import Menu from '../Menu/Menu';
 const Navbar = () => {
   return (
     <>
-    <nav className='bg-secondry_color border-b-[1px] border-primary_color'>
+    <nav className='bg-secondry_color border-b-[1px] border-primary_color '>
         <div className="container">
             <div className="nav_main">
                 <div className="nav_top flex justify-between items-center ">
@@ -30,7 +30,7 @@ const Navbar = () => {
             </div>
         </div>
     </nav>
-    <Menu/>
+        <Menu/>
     </>
   )
 }
