@@ -1,5 +1,4 @@
 import React from 'react'
-import './Banner.css'
 import banner from '../../assets/banner.png'
 import banner2 from '../../assets/banner2.png'
 import banner3 from '../../assets/banner3.png'
@@ -22,8 +21,8 @@ const Banner = () => {
     autoplaySpeed: 1500,
   };
   return (
-    <section className='overflow-hidden h-[490px] w-full '>
-      <Slider {...settings}>
+    <section className='overflow-hidden h-[490px] w-full'>
+      <Slider {...settings} className='m-[-10px]'>
         <div className="banner_main h-[490px] w-full">
           <img src={banner} className='w-full h-full' alt="img" />
         </div>

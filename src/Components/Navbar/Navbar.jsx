@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import logo from '../../assets/Logo3.png'
 import { HiSearch } from "react-icons/hi";
 import { BsCart4 } from "react-icons/bs";
@@ -7,9 +7,19 @@ import Menu from '../Menu/Menu';
 
 
 const Navbar = () => {
+
+
+    useEffect(()=>{
+        window.addEventListener("scroll",function(){
+            var header = document.querySelector('.header')
+            header.classList.toggle('fixed' , window.scrollY > 0)
+            console.log(header);
+            
+        })
+    },[])
   return (
     <>
-    <nav className='bg-secondry_color border-b-[1px] border-primary_color '>
+    <nav className='bg-secondry_color header top-0 left-0 w-full z-[999] ease-linear duration-300'>
         <div className="container">
             <div className="nav_main">
                 <div className="nav_top flex justify-between items-center ">
@@ -29,8 +39,9 @@ const Navbar = () => {
                 </div>
             </div>
         </div>
-    </nav>
         <Menu/>
+    </nav>
+    
     </>
   )
 }

@@ -73,7 +73,7 @@ const Menu = () => {
   
   
   return (
-    <header className='bg-secondry_color py-[5px] bg-secondry_color '>
+    <header className='bg-secondry_color py-[5px] bg-secondry_color  border-t-[1px] border-primary_color  '>
         <div className="container">
             <div className="header_main nav_bottom text-paragraph font-semibold cursor-pointe text-white py-[10px]">
               <div className='flex justify-between items-center '>
