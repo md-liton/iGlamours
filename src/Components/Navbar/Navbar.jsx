@@ -13,13 +13,11 @@ const Navbar = () => {
         window.addEventListener("scroll",function(){
             var header = document.querySelector('.header')
             header.classList.toggle('fixed' , window.scrollY > 0)
-            console.log(header);
-            
         })
     },[])
   return (
     <>
-    <nav className='bg-secondry_color header top-0 left-0 w-full z-[999] ease-linear duration-300'>
+    <nav className='bg-secondry_color header top-0 left-0 w-full z-[999] ease-in duration-300 delay-300'>
         <div className="container">
             <div className="nav_main">
                 <div className="nav_top flex justify-between items-center ">

@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { IoIosArrowDown } from "react-icons/io";
+import { Link, useLocation } from 'react-router-dom';
 
 
 const Menu = () => {
+  const location =useLocation()
 
   const [active,setActive]=useState('')
 
@@ -77,10 +79,10 @@ const Menu = () => {
         <div className="container">
             <div className="header_main nav_bottom text-paragraph font-semibold cursor-pointe text-white py-[10px]">
               <div className='flex justify-between items-center '>
-                <div  className={`cursor-pointer  rounded-full py-[5px] px-[10px]  ${active == 'allproducts' || active == '' ? 'text-primary_color bg-[#FABFE2]' : ''}`} onClick={(e)=>(setActive('allproducts'))}>All products</div>
+                <Link to='/'  className={`cursor-pointer  rounded-full py-[5px] px-[10px]  ${ location.pathname == '/' && 'text-primary_color bg-[#FABFE2]' }`} onClick={()=>setActive('')} >All products</Link>
 
                 
-                <div className={`makeup cursor-pointer  rounded-full py-[5px] px-[10px] duration-300 relative   ${active == 'makeup' && 'text-primary_color bg-[#FABFE2] '}`} onClick={(e)=>(setActive('makeup'))}>
+                <Link to='/makeup' className={`makeup cursor-pointer  rounded-full py-[5px] px-[10px] duration-300 relative   ${active == 'makeup' && 'text-primary_color bg-[#FABFE2] '}`} onClick={(e)=>(setActive('makeup'))}>
                   <div className='flex items-center gap-[5px]'>MAKEUP <IoIosArrowDown /></div>
                   <div className='makeup_item absolute text-white text-[14px] font-thin bg-secondry_color top-[30px] w-[150px] left-[-10px] flex justify-center items-center rounded-lg hidden duration-400 z-[99]'>
                     <ul className=' p-[20px] '>
@@ -94,11 +96,11 @@ const Menu = () => {
                       <li className='py-[5px] hover:text-primary_color duration-300'>Blush</li>
                     </ul>
                   </div>
-                  </div>
+                  </Link>
 
 
 
-                <div className={`skincare cursor-pointer  rounded-full py-[5px] px-[10px] relative  ${active == 'skincare' && 'text-primary_color bg-[#FABFE2]'}`} onClick={(e)=>(setActive('skincare'))}>
+                <Link to='skincare' className={`skincare cursor-pointer  rounded-full py-[5px] px-[10px] relative  ${active == 'skincare' && 'text-primary_color bg-[#FABFE2]'}`} onClick={(e)=>(setActive('skincare'))}>
                   <div className='flex items-center gap-[5px]'>SKIN CARE <IoIosArrowDown /></div>
                   <div  className='skincare_item absolute text-white text-[14px] font-thin bg-secondry_color top-[30px] w-[200px] left-[-10px] flex justify-center items-center rounded-lg hidden duration-400 z-[99]'>
                   <ul className=' p-[20px] '>
@@ -108,9 +110,9 @@ const Menu = () => {
                       <li className='py-[5px] hover:text-primary_color duration-300'>Shop By Concern</li>
                     </ul>
                   </div>
-                  </div>
+                  </Link>
 
-                <div className={`hair cursor-pointer  rounded-full py-[5px] px-[10px] relative ${active == 'hair' && 'text-primary_color bg-[#FABFE2]'}`} onClick={(e)=>(setActive('hair'))}>
+                <Link to='/hair' className={`hair cursor-pointer  rounded-full py-[5px] px-[10px] relative ${active == 'hair' && 'text-primary_color bg-[#FABFE2]'}`} onClick={(e)=>(setActive('hair'))}>
                   <div  className='flex items-center gap-[5px]'>HAIR <IoIosArrowDown /></div>
                   <div className='hair_item absolute text-white text-[14px] font-thin bg-secondry_color top-[30px] w-[200px] left-[-10px] flex justify-center items-center rounded-lg hidden duration-400 z-[99]'>
                   <ul className=' p-[20px] '>
@@ -120,10 +122,10 @@ const Menu = () => {
                       <li className='py-[5px] hover:text-primary_color duration-300'>Hair Treatment</li>
                     </ul>
                   </div>
-                  </div>
+                  </Link>
 
                   
-                <div className={`personalcare cursor-pointer  rounded-full py-[5px] px-[10px] relative  ${active == 'personalcare' && 'text-primary_color bg-[#FABFE2]'}`} onClick={(e)=>(setActive('personalcare'))}>
+                <Link to='/personalcare' className={`personalcare cursor-pointer  rounded-full py-[5px] px-[10px] relative  ${active == 'personalcare' && 'text-primary_color bg-[#FABFE2]'}`} onClick={(e)=>(setActive('personalcare'))}>
                   <div  className='flex items-center gap-[5px]'>PERSONAL CARE <IoIosArrowDown /></div>
                   <div className='personalcare_item absolute text-white text-[14px] font-thin bg-secondry_color top-[30px] w-[250px] left-[-10px] flex justify-center items-center rounded-lg hidden duration-400 z-[99]'>
                   <ul className=' p-[20px] '>
@@ -132,10 +134,10 @@ const Menu = () => {
                       <li className='py-[5px] hover:text-primary_color duration-300'>Sanitary Napkins</li>
                     </ul>
                   </div>
-                  </div>
+                  </Link>
 
 
-                <div className={`kbeauty cursor-pointer  rounded-full py-[5px] px-[10px] relative  ${active == 'kbeauty' && 'text-primary_color bg-[#FABFE2]'}`} onClick={(e)=>(setActive('kbeauty'))}>
+                <Link to='/kbeauty' className={`kbeauty cursor-pointer  rounded-full py-[5px] px-[10px] relative  ${active == 'kbeauty' && 'text-primary_color bg-[#FABFE2]'}`} onClick={(e)=>(setActive('kbeauty'))}>
                   <div className='flex items-center gap-[5px]'>K-BEAUTY <IoIosArrowDown /></div> 
                   <div  className='kbeauty_item absolute text-white text-[14px] font-thin bg-secondry_color top-[30px] w-[200px] left-[-10px] flex justify-center items-center rounded-lg hidden duration-400 z-[99]'>
                   <ul className=' p-[20px] '>
@@ -152,10 +154,10 @@ const Menu = () => {
                       <li className='py-[5px] hover:text-primary_color duration-300'>Scrubs & Exfoliators</li>
                     </ul>
                   </div>
-                </div>
+                </Link>
 
 
-                <div className={`mom cursor-pointer  rounded-full py-[5px] px-[10px] relative  ${active == 'mom&baby' && 'text-primary_color bg-[#FABFE2]'}`} onClick={(e)=>(setActive('mom&baby'))}>
+                <Link to='/mom&baby' className={`mom cursor-pointer  rounded-full py-[5px] px-[10px] relative  ${active == 'mom&baby' && 'text-primary_color bg-[#FABFE2]'}`} onClick={(e)=>(setActive('mom&baby'))}>
                   <div className='flex items-center gap-[5px]'>MOM & BABY <IoIosArrowDown /></div>
                   <div className='mom_item absolute text-white text-[14px] font-thin bg-secondry_color top-[30px] w-[200px] left-[-10px] flex justify-center items-center rounded-lg hidden duration-400 z-[99]'>
                   <ul className=' p-[20px] '>
@@ -171,9 +173,9 @@ const Menu = () => {
                       <li className='py-[5px] hover:text-primary_color duration-300'>Baby Care</li>
                     </ul>
                   </div>
-                </div>
+                </Link>
 
-                <div className={`undergarments cursor-pointer  rounded-full py-[5px] px-[10px] relative ${active == 'undergarments' && 'text-primary_color bg-[#FABFE2]'}`} onClick={(e)=>(setActive('undergarments'))}>
+                <Link to='/undergarments' className={`undergarments cursor-pointer  rounded-full py-[5px] px-[10px] relative ${active == 'undergarments' && 'text-primary_color bg-[#FABFE2]'}`} onClick={(e)=>(setActive('undergarments'))}>
                   <div className='flex items-center gap-[5px]'>UNDERGARMENTS <IoIosArrowDown /></div>
                   <div className='undergarments_item absolute text-white text-[14px] font-thin bg-secondry_color top-[30px] w-[200px] left-[-10px] flex justify-center items-center rounded-lg hidden duration-400 z-[99]'>
                   <ul className=' p-[20px] '>
@@ -181,10 +183,14 @@ const Menu = () => {
                       <li className='py-[5px] hover:text-primary_color duration-300'>Panty</li>
                     </ul>
                   </div>
-                  
-                  </div>
-                <div className={`cursor-pointer  rounded-full py-[5px] px-[10px]  ${active == 'essential' && 'text-primary_color bg-[#FABFE2]'}`} onClick={(e)=>(setActive('essential'))}>ESSENTIAL</div>
-                <div className={`cursor-pointer  rounded-full py-[5px] px-[10px]  ${active == 'blog' && 'text-primary_color bg-[#FABFE2]'}`} onClick={(e)=>(setActive('blog'))}>BLOG</div>
+                  </Link>
+
+
+                <Link to='/essential' className={`cursor-pointer  rounded-full py-[5px] px-[10px]  ${active == 'essential' && 'text-primary_color bg-[#FABFE2]'}`} onClick={(e)=>(setActive('essential'))}>ESSENTIAL</Link>
+
+                <Link to='/blog' className={`cursor-pointer  rounded-full py-[5px] px-[10px]  ${active == 'blog' && 'text-primary_color bg-[#FABFE2]'}`} onClick={(e)=>(setActive('blog'))}>BLOG</Link>
+
+
               </div>
             </div>
         </div>

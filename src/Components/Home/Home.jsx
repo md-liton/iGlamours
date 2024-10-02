@@ -7,17 +7,26 @@ import Explore from '../Explore/Explore'
 import Catagory from '../Catagory/Catagory'
 import Service from '../Service/Service'
 import Footer from '../Footer/Footer'
+import { Outlet, useLocation } from 'react-router-dom'
 
 const Home = () => {
+  const location =useLocation()
   return (
     <>
     <Navbar/>
-    <Banner/> 
-     <Advertising/>
-     <Allproducts/>
-     <Explore/>
-     <Catagory/>
-     <Service/>
+    {
+      location.pathname == '/' &&
+        <div>
+          <Banner/>
+          <Advertising />
+          <Allproducts />
+          <Explore />
+          <Catagory />
+          <Service />
+        </div>
+    }
+     <Outlet>
+     </Outlet>
      <Footer/>
     </>
   )
