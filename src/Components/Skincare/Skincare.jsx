@@ -3,6 +3,7 @@ import bg from '../../assets/skinbg.png'
 import product from '../../assets/product.jpg'
 import product2 from '../../assets/product2.jpg'
 import product3 from '../../assets/product3.jpg'
+import Sidebar from '../Sidebar/Sidebar'
 
 const Skincare = () => {
   return (
@@ -13,7 +14,9 @@ const Skincare = () => {
         <div className="container">
           
             <div className="skincare_main flex py-[20px]">
-          <div className='w-1/4'>1</div>
+          <div className='w-1/4'>
+          <Sidebar/>
+          </div>
           <div className='w-3/4 flex gap-[15px] flex-wrap'>
             <div className='border rounded-[20px] cursor-pointer  p-[15px]  bg-white w-[250px]'>
               <div className=' '>

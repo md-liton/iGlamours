@@ -14,7 +14,7 @@ const Makeup = () => {
         <img src={bg} alt="img" className='h-[200px] w-full' />
       </div>
       <div className="container">
-        <div className="makeup_main flex py-[20px]">
+        <div className="makeup_main flex py-[40px]">
           <div className='w-1/4'>
           <Sidebar/>
           </div>

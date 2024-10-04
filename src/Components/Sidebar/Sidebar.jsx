@@ -1,13 +1,30 @@
-import React, { useState } from 'react'
-import { LiaShippingFastSolid } from "react-icons/lia";
+import React, { useEffect, useState } from 'react'
 import { SlEnergy } from "react-icons/sl";
+import img from '../../assets/top.png'
+import { FaStar } from "react-icons/fa";
+import { Link, useLocation } from 'react-router-dom';
+
+
 
 
 const Sidebar = () => {
+  const location =useLocation()
 
-    const [makeup,setMakeup]=useState(false)
+    const [makeup,setMakeup]=useState(true)
+    const [skin , setSkin]=useState(true)
+    const [hair,setHair]=useState(true)
+    const [personal,setPersonal]=useState(true)
+    const [beauty ,setBeauty]=useState(true)
+    const [mom , setMom]=useState(true)
+    const [under,setUnder]=useState(true)
 
-    console.log(makeup);
+    useEffect(()=>{
+      location.pathname == '/makeup' && setMakeup(false);
+      location.pathname == '/skincare' && setSkin(false);
+      location.pathname == '/hair' && setHair(false);
+      location.pathname == '/personalcare' && setPersonal(false);
+      location.pathname == '/kbeauty' && setBeauty(false);
+    },[])
     
 
 
@@ -18,6 +35,72 @@ const Sidebar = () => {
               {/* <input type="range"/> */}
           </div>
           <div className="catagory_subcatagory">
+
+            <div className='py-[30px]'>
+              <div className='border-b-[1px]'>
+                  <p className='font-semibold text-[18px] font-heading text-secondry_color py-[10px] '>Top rated products</p>
+              </div>
+
+              <div className='flex items-center gap-[15px] py-[20px] border-b-[1px]'>
+                <div>
+                <img src={img} alt="img" className='w-[65px] h-[65px] rounded-lg'/>
+                </div>
+                <div >
+                <p className='font-bold font-heading text-[14px]'>CPS Keratin Doctor Hair Treatment</p>
+                <div className='flex items-center gap-[1px] text-[#EABE12]'>
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                </div>
+                <div className='flex gap-[15px]'>
+                  <span className='text-[#A5A5A5]'><s>2200Tk</s></span>
+                  <span className='text-[15px] font-bold font-heading text-primary_color'>1699TK</span>
+                </div>
+                </div>
+              </div>
+              <div className='flex items-center gap-[15px] py-[20px] border-b-[1px]'>
+                <div>
+                <img src={img} alt="img" className='w-[65px] h-[65px] rounded-lg'/>
+                </div>
+                <div >
+                <p className='font-bold font-heading text-[14px]'>CPS Keratin Doctor Hair Treatment</p>
+                <div className='flex items-center gap-[1px] text-[#EABE12]'>
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                </div>
+                <div className='flex gap-[15px]'>
+                  <span className='text-[#A5A5A5]'><s>2200Tk</s></span>
+                  <span className='text-[15px] font-bold font-heading text-primary_color'>1699TK</span>
+                </div>
+                </div>
+              </div>
+              <div className='flex items-center gap-[15px] py-[20px] border-b-[1px]'>
+                <div>
+                <img src={img} alt="img" className='w-[65px] h-[65px] rounded-lg'/>
+                </div>
+                <div >
+                <p className='font-bold font-heading text-[14px]'>CPS Keratin Doctor Hair Treatment</p>
+                <div className='flex items-center gap-[1px] text-[#EABE12]'>
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                </div>
+                <div className='flex gap-[15px]'>
+                  <span className='text-[#A5A5A5]'><s>2200Tk</s></span>
+                  <span className='text-[15px] font-bold font-heading text-primary_color'>1699TK</span>
+                </div>
+                </div>
+              </div>
+
+
+            </div>
               <div className='border-b-[1px]'>
                   <p className='font-semibold text-[18px] font-heading text-secondry_color py-[10px] '>Product Categories</p>
               </div>
@@ -26,13 +109,27 @@ const Sidebar = () => {
                 <span className='px-[5px] text-white bg-primary_color rounded-lg font-bold'>500</span>
               </div>
               <div className='flex justify-between items-center py-[10px]'>
+                <p className='text-[14px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 flex items-center gap-[10px]'><span>Offers</span> <SlEnergy /></p>
+                <span className='px-[5px] text-white bg-primary_color rounded-lg font-bold'>500</span>
+              </div>
+              <div className='flex justify-between items-center py-[10px]'>
+                <p className='text-[14px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 flex items-center gap-[10px]'><span>Buy 1 Get 1</span> <SlEnergy /></p>
+                <span className='px-[5px] text-white bg-primary_color rounded-lg font-bold'>500</span>
+              </div>
+              <div className='flex justify-between items-center py-[10px]'>
+                <p className='text-[14px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 flex items-center gap-[10px]'><span>Combo</span> <SlEnergy /></p>
+                <span className='px-[5px] text-white bg-primary_color rounded-lg font-bold'>500</span>
+              </div>
+              <div className='flex justify-between items-center py-[10px]'>
                 <p className='text-[14px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 flex items-center gap-[10px]'><span>Top Selling</span> <SlEnergy /></p>
                 <span className='px-[5px] text-white bg-primary_color rounded-lg font-bold'>500</span>
               </div>
               <div >
                 <div className='flex justify-between items-center py-[10px]'>
-                <p className={`text-[14px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 ` }
-                 onClick={()=>setMakeup(!makeup)}>MakeUP</p>
+                <p className={`text-[14px] font-paragraph  cursor-pointer hover:text-primary_color duration-300  ${location.pathname == '/makeup' ? 'text-primary_color font-bold' : 'text-secondry_color'} ` }
+                 onClick={()=>setMakeup(!makeup)}>
+                  <Link to='/makeup'>MakeUp</Link>
+                 </p>
                 <span className='px-[5px] text-white bg-primary_color rounded-lg font-bold'>500</span>
                 </div>
                 <div className={`makeup_items pl-[20px] duration-300 ease-in-out ${makeup && 'hidden'}`}>
@@ -67,6 +164,204 @@ const Sidebar = () => {
                 <div className='flex justify-between items-center py-[3px]'>
                 <p className='text-[12px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 py-[5px]'>Blush</p>
                 <span  className='px-[5px] border-[1px]  border-primary_color text-primary_color rounded-lg '>500</span>
+                </div>
+                </div>
+              </div>
+              <div >
+                <div className='flex justify-between items-center py-[10px]'>
+                <p className={`text-[14px] font-paragraph  cursor-pointer hover:text-primary_color duration-300  ${location.pathname == '/skincare'? 'text-primary_color font-bold ':"text-secondry_color"}` }
+                 onClick={()=>setSkin(!skin)}>
+                  <Link to='/skincare'>Skin Care</Link>
+                 </p>
+                <span className='px-[5px] text-white bg-primary_color rounded-lg font-bold'>500</span>
+                </div>
+                <div className={`makeup_items pl-[20px] duration-300 ease-in-out ${skin && 'hidden'}`}>
+                <div className='flex justify-between items-center py-[3px]'>
+                <p className='text-[12px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 py-[5px]'>Face</p>
+                <span className='px-[5px] border-[1px]  border-primary_color text-primary_color rounded-lg '>99</span>
+                </div>
+                <div className='flex justify-between items-center py-[3px]'>
+                <p className='text-[12px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 py-[5px]'>Hands & Feet</p>
+                <span  className='px-[5px] border-[1px]  border-primary_color text-primary_color rounded-lg '>1990</span>
+                </div>
+                <div className='flex justify-between items-center py-[3px]'>
+                <p className='text-[12px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 py-[5px]'>Eye Care</p>
+                <span className='px-[5px] border-[1px]  border-primary_color text-primary_color rounded-lg '>250</span>
+                </div>
+                </div>
+              </div>
+              <div >
+                <div className='flex justify-between items-center py-[10px]'>
+                <p className={`text-[14px] font-paragraph cursor-pointer hover:text-primary_color duration-300 ${location.pathname == '/hair' && 'text-primary_color font-bold'} ` }
+                 onClick={()=>setHair(!hair)}>
+                  <Link to='/hair'>Hair</Link>
+                 </p>
+                <span className='px-[5px] text-white bg-primary_color rounded-lg font-bold'>500</span>
+                </div>
+                <div className={`makeup_items pl-[20px] duration-300 ease-in-out ${hair && 'hidden'}`}>
+                <div className='flex justify-between items-center py-[3px]'>
+                <p className='text-[12px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 py-[5px]'>Hair Care</p>
+                <span className='px-[5px] border-[1px]  border-primary_color text-primary_color rounded-lg '>99</span>
+                </div>
+                <div className='flex justify-between items-center py-[3px]'>
+                <p className='text-[12px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 py-[5px]'>Hair Styling</p>
+                <span  className='px-[5px] border-[1px]  border-primary_color text-primary_color rounded-lg '>1990</span>
+                </div>
+                <div className='flex justify-between items-center py-[3px]'>
+                <p className='text-[12px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 py-[5px]'>Hair accessories</p>
+                <span className='px-[5px] border-[1px]  border-primary_color text-primary_color rounded-lg '>250</span>
+                </div>
+                <div className='flex justify-between items-center py-[3px]'>
+                <p className='text-[12px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 py-[5px]'>Hair Treatment</p>
+                <span className='px-[5px] border-[1px]  border-primary_color text-primary_color rounded-lg '>250</span>
+                </div>
+                </div>
+              </div>
+              <div >
+                <div className='flex justify-between items-center py-[10px]'>
+                <p className={`text-[14px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 ` }
+                 onClick={()=>setPersonal(!personal)}>
+                  <Link to='/personalcare'>Personal Care</Link>
+                 </p>
+                <span className='px-[5px] text-white bg-primary_color rounded-lg font-bold'>500</span>
+                </div>
+                <div className={`makeup_items pl-[20px] duration-300 ease-in-out ${personal && 'hidden'}`}>
+                <div className='flex justify-between items-center py-[3px]'>
+                <p className='text-[12px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 py-[5px]'>Bath & Shower</p>
+                <span className='px-[5px] border-[1px]  border-primary_color text-primary_color rounded-lg '>99</span>
+                </div>
+                <div className='flex justify-between items-center py-[3px]'>
+                <p className='text-[12px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 py-[5px]'>Hands & Feet</p>
+                <span  className='px-[5px] border-[1px]  border-primary_color text-primary_color rounded-lg '>1990</span>
+                </div>
+                <div className='flex justify-between items-center py-[3px]'>
+                <p className='text-[12px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 py-[5px]'>Sanitary Napkins</p>
+                <span className='px-[5px] border-[1px]  border-primary_color text-primary_color rounded-lg '>250</span>
+                </div>
+                </div>
+              </div>
+              <div >
+                <div className='flex justify-between items-center py-[10px]'>
+                <p className={`text-[14px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 ` }
+                 onClick={()=>setBeauty(!beauty)}>
+                  <Link to='/kbeauty'>K-Beauty</Link>
+                 </p>
+                <span className='px-[5px] text-white bg-primary_color rounded-lg font-bold'>500</span>
+                </div>
+                <div className={`makeup_items pl-[20px] duration-300 ease-in-out ${beauty && 'hidden'}`}>
+                <div className='flex justify-between items-center py-[3px]'>
+                <p className='text-[12px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 py-[5px]'>Moisturizer</p>
+                <span className='px-[5px] border-[1px]  border-primary_color text-primary_color rounded-lg '>99</span>
+                </div>
+                <div className='flex justify-between items-center py-[3px]'>
+                <p className='text-[12px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 py-[5px]'>Sheet Mask</p>
+                <span  className='px-[5px] border-[1px]  border-primary_color text-primary_color rounded-lg '>1990</span>
+                </div>
+                <div className='flex justify-between items-center py-[3px]'>
+                <p className='text-[12px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 py-[5px]'>Toners & Astringents</p>
+                <span className='px-[5px] border-[1px]  border-primary_color text-primary_color rounded-lg '>250</span>
+                </div>
+                <div className='flex justify-between items-center py-[3px]'>
+                <p className='text-[12px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 py-[5px]'>Facewash</p>
+                <span className='px-[5px] border-[1px]  border-primary_color text-primary_color rounded-lg '>250</span>
+                </div>
+                <div className='flex justify-between items-center py-[3px]'>
+                <p className='text-[12px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 py-[5px]'>Cleanser</p>
+                <span className='px-[5px] border-[1px]  border-primary_color text-primary_color rounded-lg '>250</span>
+                </div>
+                <div className='flex justify-between items-center py-[3px]'>
+                <p className='text-[12px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 py-[5px]'>Serum/Oils</p>
+                <span className='px-[5px] border-[1px]  border-primary_color text-primary_color rounded-lg '>250</span>
+                </div>
+                <div className='flex justify-between items-center py-[3px]'>
+                <p className='text-[12px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 py-[5px]'>Sleeping Mask</p>
+                <span className='px-[5px] border-[1px]  border-primary_color text-primary_color rounded-lg '>250</span>
+                </div>
+                <div className='flex justify-between items-center py-[3px]'>
+                <p className='text-[12px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 py-[5px]'>Sunscreen</p>
+                <span className='px-[5px] border-[1px]  border-primary_color text-primary_color rounded-lg '>250</span>
+                </div>
+                <div className='flex justify-between items-center py-[3px]'>
+                <p className='text-[12px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 py-[5px]'>Essence</p>
+                <span className='px-[5px] border-[1px]  border-primary_color text-primary_color rounded-lg '>250</span>
+                </div>
+                <div className='flex justify-between items-center py-[3px]'>
+                <p className='text-[12px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 py-[5px]'>Facial Wipes</p>
+                <span className='px-[5px] border-[1px]  border-primary_color text-primary_color rounded-lg '>250</span>
+                </div>
+                <div className='flex justify-between items-center py-[3px]'>
+                <p className='text-[12px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 py-[5px]'>Scrubs & Exfoliators</p>
+                <span className='px-[5px] border-[1px]  border-primary_color text-primary_color rounded-lg '>250</span>
+                </div>
+                </div>
+              </div>
+              <div >
+                <div className='flex justify-between items-center py-[10px]'>
+                <p className={`text-[14px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 ` }
+                 onClick={()=>setMom(!mom)}>
+                  <Link to='/mom&baby'>Mom & Baby</Link>
+                 </p>
+                <span className='px-[5px] text-white bg-primary_color rounded-lg font-bold'>500</span>
+                </div>
+                <div className={`makeup_items pl-[20px] duration-300 ease-in-out ${mom && 'hidden'}`}>
+                <div className='flex justify-between items-center py-[3px]'>
+                <p className='text-[12px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 py-[5px]'>Baby Products</p>
+                <span className='px-[5px] border-[1px]  border-primary_color text-primary_color rounded-lg '>99</span>
+                </div>
+                <div className='flex justify-between items-center py-[3px]'>
+                <p className='text-[12px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 py-[5px]'>Creams & Moisturizers</p>
+                <span  className='px-[5px] border-[1px]  border-primary_color text-primary_color rounded-lg '>1990</span>
+                </div>
+                <div className='flex justify-between items-center py-[3px]'>
+                <p className='text-[12px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 py-[5px]'>Lotion</p>
+                <span className='px-[5px] border-[1px]  border-primary_color text-primary_color rounded-lg '>250</span>
+                </div>
+                <div className='flex justify-between items-center py-[3px]'>
+                <p className='text-[12px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 py-[5px]'>Oil</p>
+                <span className='px-[5px] border-[1px]  border-primary_color text-primary_color rounded-lg '>250</span>
+                </div>
+                <div className='flex justify-between items-center py-[3px]'>
+                <p className='text-[12px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 py-[5px]'>Powder</p>
+                <span className='px-[5px] border-[1px]  border-primary_color text-primary_color rounded-lg '>250</span>
+                </div>
+                <div className='flex justify-between items-center py-[3px]'>
+                <p className='text-[12px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 py-[5px]'>Shampoo</p>
+                <span className='px-[5px] border-[1px]  border-primary_color text-primary_color rounded-lg '>250</span>
+                </div>
+                <div className='flex justify-between items-center py-[3px]'>
+                <p className='text-[12px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 py-[5px]'>Soap & Bodywash</p>
+                <span className='px-[5px] border-[1px]  border-primary_color text-primary_color rounded-lg '>250</span>
+                </div>
+                <div className='flex justify-between items-center py-[3px]'>
+                <p className='text-[12px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 py-[5px]'>Bath Time</p>
+                <span className='px-[5px] border-[1px]  border-primary_color text-primary_color rounded-lg '>250</span>
+                </div>
+                <div className='flex justify-between items-center py-[3px]'>
+                <p className='text-[12px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 py-[5px]'>Sunscreen</p>
+                <span className='px-[5px] border-[1px]  border-primary_color text-primary_color rounded-lg '>250</span>
+                </div>
+                <div className='flex justify-between items-center py-[3px]'>
+                <p className='text-[12px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 py-[5px]'>Baby Care</p>
+                <span className='px-[5px] border-[1px]  border-primary_color text-primary_color rounded-lg '>250</span>
+                </div>
+                </div>
+              </div>
+              <div >
+                <div className='flex justify-between items-center py-[10px]'>
+                <p className={`text-[14px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 ` }
+                 onClick={()=>setUnder(!under)}>
+                  <Link to='/undergarments'>Undergarments</Link>
+                 </p>
+                <span className='px-[5px] text-white bg-primary_color rounded-lg font-bold'>500</span>
+                </div>
+                <div className={`makeup_items pl-[20px] duration-300 ease-in-out ${under && 'hidden'}`}>
+                <div className='flex justify-between items-center py-[3px]'>
+                <p className='text-[12px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 py-[5px]'>Bra</p>
+                <span className='px-[5px] border-[1px]  border-primary_color text-primary_color rounded-lg '>99</span>
+                </div>
+                <div className='flex justify-between items-center py-[3px]'>
+                <p className='text-[12px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 py-[5px]'>Panty</p>
+                <span  className='px-[5px] border-[1px]  border-primary_color text-primary_color rounded-lg '>1990</span>
                 </div>
                 </div>
               </div>

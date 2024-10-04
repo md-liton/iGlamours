@@ -8,6 +8,7 @@ import Catagory from '../Catagory/Catagory'
 import Service from '../Service/Service'
 import Footer from '../Footer/Footer'
 import { Outlet, useLocation } from 'react-router-dom'
+import Whatsapp from '../Whatsapp/Whatsapp'
 
 const Home = () => {
   const location =useLocation()
@@ -25,8 +26,9 @@ const Home = () => {
           <Service />
         </div>
     }
-     <Outlet>
+     <Outlet >
      </Outlet>
+     <Whatsapp/>
      <Footer/>
     </>
   )
