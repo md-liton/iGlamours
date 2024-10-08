@@ -3,6 +3,8 @@ import { SlEnergy } from "react-icons/sl";
 import img from '../../assets/top.png'
 import { FaStar } from "react-icons/fa";
 import { Link, useLocation } from 'react-router-dom';
+import { FaSearch } from "react-icons/fa";
+
 
 
 
@@ -30,13 +32,21 @@ const Sidebar = () => {
 
   return (
       <div className='mr-[20px]'>
-          <div className='border-b-[1px]'>
-              <p className='font-semibold text-[18px] font-heading text-secondry_color py-[10px]'>Filter by Price</p>
-              {/* <input type="range"/> */}
-          </div>
-          <div className="catagory_subcatagory">
+      <div className=''>
+        <p className='font-semibold text-[18px] font-heading text-secondry_color py-[10px] border-b-[1px] mb-[10px]'>Filter by Catagory</p>
+        <select className='mt-[10px] w-full focus:outline-none border-[1px] border-primary_color px-[10px] rounded-[5px] py-[7px] '>
+          <option >Default sorting</option>
+          <option >Price: Low to High</option>
+          <option >Price: High to Low</option>
+          <option >Product: Old First</option>
+          <option >Product: New First</option>
+          <option >Popularity: Most Popular First</option>
+          <option >Popularity: Less Popular first</option>
+        </select>
+      </div>
+          <div className="catagory_subcatagory ">
 
-            <div className='py-[30px]'>
+            <div className='py-[10px]'>
               <div className='border-b-[1px]'>
                   <p className='font-semibold text-[18px] font-heading text-secondry_color py-[10px] '>Top rated products</p>
               </div>
@@ -365,6 +375,88 @@ const Sidebar = () => {
                 </div>
                 </div>
               </div>
+          </div>
+          <div className='border-b-[1px]'>
+              <p className='font-semibold text-[18px] font-heading text-secondry_color py-[10px]'>Filter by Brand</p>
+          </div>
+          <div>
+            <div className='p-2 relative'>
+              <input type="search" placeholder='Search your Brand' className='border-[1px] border-primary_color rounded-lg p-2 w-full focus:outline-none'/>
+              <FaSearch  className='absolute top-[20px] right-[20px] cursor-pointer'/>
+            </div>
+
+            <div className='checkbox_item p-2 '>
+              <div className='flex justify-between items-center my-[10px]'>
+              <div>
+              <input type="checkbox" className='mr-[15px] cursor-pointer '/>
+              <span>NICKA K</span>
+              </div>
+              <span className='px-[10px] bg-[#F3F3F3] text-primary_color rounded-lg'>20</span>
+              </div>
+              <div className='flex justify-between items-center my-[10px]'>
+              <div>
+              <input type="checkbox" className='mr-[15px] cursor-pointer '/>
+              <span>NICKA K</span>
+              </div>
+              <span className='px-[10px] bg-[#F3F3F3] text-primary_color rounded-lg'>20</span>
+              </div>
+              <div className='flex justify-between items-center my-[10px]'>
+              <div>
+              <input type="checkbox" className='mr-[15px] cursor-pointer '/>
+              <span>NICKA K</span>
+              </div>
+              <span className='px-[10px] bg-[#F3F3F3] text-primary_color rounded-lg'>20</span>
+              </div>
+              <div className='flex justify-between items-center my-[10px]'>
+              <div>
+              <input type="checkbox" className='mr-[15px] cursor-pointer '/>
+              <span>NICKA K</span>
+              </div>
+              <span className='px-[10px] bg-[#F3F3F3] text-primary_color rounded-lg'>20</span>
+              </div>
+              <div className='flex justify-between items-center my-[10px]'>
+              <div>
+              <input type="checkbox" className='mr-[15px] cursor-pointer '/>
+              <span>NICKA K</span>
+              </div>
+              <span className='px-[10px] bg-[#F3F3F3] text-primary_color rounded-lg'>20</span>
+              </div>
+              <div className='flex justify-between items-center my-[10px]'>
+              <div>
+              <input type="checkbox" className='mr-[15px] cursor-pointer '/>
+              <span>NICKA K</span>
+              </div>
+              <span className='px-[10px] bg-[#F3F3F3] text-primary_color rounded-lg'>20</span>
+              </div>
+              <div className='flex justify-between items-center my-[10px]'>
+              <div>
+              <input type="checkbox" className='mr-[15px] cursor-pointer '/>
+              <span>NICKA K</span>
+              </div>
+              <span className='px-[10px] bg-[#F3F3F3] text-primary_color rounded-lg'>20</span>
+              </div>
+              <div className='flex justify-between items-center my-[10px]'>
+              <div>
+              <input type="checkbox" className='mr-[15px] cursor-pointer '/>
+              <span>NICKA K</span>
+              </div>
+              <span className='px-[10px] bg-[#F3F3F3] text-primary_color rounded-lg'>20</span>
+              </div>
+              <div className='flex justify-between items-center my-[10px]'>
+              <div>
+              <input type="checkbox" className='mr-[15px] cursor-pointer '/>
+              <span>NICKA K</span>
+              </div>
+              <span className='px-[10px] bg-[#F3F3F3] text-primary_color rounded-lg'>20</span>
+              </div>
+              <div className='flex justify-between items-center my-[10px]'>
+              <div>
+              <input type="checkbox" className='mr-[15px] cursor-pointer '/>
+              <span>NICKA K</span>
+              </div>
+              <span className='px-[10px] bg-[#F3F3F3] text-primary_color rounded-lg'>20</span>
+              </div>
+            </div>
           </div>
       </div>
   )

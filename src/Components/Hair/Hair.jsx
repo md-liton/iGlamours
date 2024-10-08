@@ -4,6 +4,7 @@ import product from '../../assets/product.jpg'
 import product2 from '../../assets/product2.jpg'
 import product3 from '../../assets/product3.jpg'
 import Sidebar from '../Sidebar/Sidebar'
+import { FaSearch } from 'react-icons/fa'
 
 const Hair = () => {
   return (
@@ -16,8 +17,13 @@ const Hair = () => {
           <div className='w-1/4'>
           <Sidebar/>
           </div>
-          <div className='w-3/4 flex gap-[15px] flex-wrap'>
-            <div className='border rounded-[20px] cursor-pointer  p-[15px]  bg-white w-[250px]'>
+          <div className='w-3/4'>
+          <div className='mb-[15px] relative'>
+            <input type="search" placeholder='Search your product'  className=' w-full focus:outline-none border-[1px] border-primary_color px-[10px] rounded-[5px] p-[7px]'/>
+            <FaSearch  className='absolute top-0 right-[15px] cursor-pointer border-l-[1px] border-primary_color h-full pl-[10px] text-[30px]'/>
+          </div>
+          <div className=' flex gap-[15px] flex-wrap'>
+            <div className='border rounded-[20px] cursor-pointer  p-[15px]  bg-white w-[250px] h-[450px]'>
               <div className=' '>
                 <img src={product} alt="img" className=']' />
               </div>
@@ -33,7 +39,7 @@ const Hair = () => {
                 </div>
               </div>
             </div>
-            <div className='border rounded-[20px] cursor-pointer  p-[15px]  bg-white w-[250px]'>
+            <div className='border rounded-[20px] cursor-pointer  p-[15px]  bg-white w-[250px] h-[450px]'>
               <div className=' '>
                 <img src={product2} alt="img" className=']' />
               </div>
@@ -49,7 +55,7 @@ const Hair = () => {
                 </div>
               </div>
             </div>
-            <div className='border rounded-[20px] cursor-pointer  p-[15px]  bg-white w-[250px]'>
+            <div className='border rounded-[20px] cursor-pointer  p-[15px]  bg-white w-[250px] h-[450px]'>
               <div className=' '>
                 <img src={product3} alt="img" className=']' />
               </div>
@@ -65,7 +71,7 @@ const Hair = () => {
                 </div>
               </div>
             </div>
-            <div className='border rounded-[20px] cursor-pointer  p-[15px]  bg-white w-[250px]'>
+            <div className='border rounded-[20px] cursor-pointer  p-[15px]  bg-white w-[250px] h-[450px]'>
               <div className=' '>
                 <img src={product} alt="img" className=']' />
               </div>
@@ -81,7 +87,7 @@ const Hair = () => {
                 </div>
               </div>
             </div>
-            <div className='border rounded-[20px] cursor-pointer  p-[15px]  bg-white w-[250px]'>
+            <div className='border rounded-[20px] cursor-pointer  p-[15px]  bg-white w-[250px] h-[450px]'>
               <div className=' '>
                 <img src={product2} alt="img" className=']' />
               </div>
@@ -97,7 +103,7 @@ const Hair = () => {
                 </div>
               </div>
             </div>
-            <div className='border rounded-[20px] cursor-pointer  p-[15px]  bg-white w-[250px]'>
+            <div className='border rounded-[20px] cursor-pointer  p-[15px]  bg-white w-[250px] h-[450px]'>
               <div className=' '>
                 <img src={product3} alt="img" className=']' />
               </div>
@@ -113,7 +119,7 @@ const Hair = () => {
                 </div>
               </div>
             </div>
-            <div className='border rounded-[20px] cursor-pointer  p-[15px]  bg-white w-[250px]'>
+            <div className='border rounded-[20px] cursor-pointer  p-[15px]  bg-white w-[250px] h-[450px]'>
               <div className=' '>
                 <img src={product} alt="img" className=']' />
               </div>
@@ -129,7 +135,7 @@ const Hair = () => {
                 </div>
               </div>
             </div>
-            <div className='border rounded-[20px] cursor-pointer  p-[15px]  bg-white w-[250px]'>
+            <div className='border rounded-[20px] cursor-pointer  p-[15px]  bg-white w-[250px] h-[450px]'>
               <div className=' '>
                 <img src={product} alt="img" className=']' />
               </div>
@@ -145,7 +151,7 @@ const Hair = () => {
                 </div>
               </div>
             </div>
-            <div className='border rounded-[20px] cursor-pointer  p-[15px]  bg-white w-[250px]'>
+            <div className='border rounded-[20px] cursor-pointer  p-[15px]  bg-white w-[250px] h-[450px]'>
               <div className=' '>
                 <img src={product} alt="img" className=']' />
               </div>
@@ -161,7 +167,7 @@ const Hair = () => {
                 </div>
               </div>
             </div>
-            <div className='border rounded-[20px] cursor-pointer  p-[15px]  bg-white w-[250px]'>
+            <div className='border rounded-[20px] cursor-pointer  p-[15px]  bg-white w-[250px] h-[450px]'>
               <div className=' '>
                 <img src={product} alt="img" className=']' />
               </div>
@@ -177,7 +183,7 @@ const Hair = () => {
                 </div>
               </div>
             </div>
-            <div className='border rounded-[20px] cursor-pointer  p-[15px]  bg-white w-[250px]'>
+            <div className='border rounded-[20px] cursor-pointer  p-[15px]  bg-white w-[250px] h-[450px]'>
               <div className=' '>
                 <img src={product} alt="img" className=']' />
               </div>
@@ -193,7 +199,7 @@ const Hair = () => {
                 </div>
               </div>
             </div>
-            <div className='border rounded-[20px] cursor-pointer  p-[15px]  bg-white w-[250px]'>
+            <div className='border rounded-[20px] cursor-pointer  p-[15px]  bg-white w-[250px] h-[450px]'>
               <div className=' '>
                 <img src={product} alt="img" className=']' />
               </div>
@@ -209,6 +215,7 @@ const Hair = () => {
                 </div>
               </div>
             </div>
+          </div>
           </div>
         
             </div>
