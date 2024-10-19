@@ -19,6 +19,7 @@ const Sidebar = () => {
     const [beauty ,setBeauty]=useState(true)
     const [mom , setMom]=useState(true)
     const [under,setUnder]=useState(true)
+    const [essential,setEssential]=useState(true)
 
     useEffect(()=>{
       location.pathname == '/makeup' && setMakeup(false);
@@ -26,6 +27,9 @@ const Sidebar = () => {
       location.pathname == '/hair' && setHair(false);
       location.pathname == '/personalcare' && setPersonal(false);
       location.pathname == '/kbeauty' && setBeauty(false);
+      location.pathname == '/mom&baby' && setMom(false);
+      location.pathname == '/undergarments' && setUnder(false);
+      location.pathname == '/essential' && setEssential(false);
     },[])
     
 
@@ -229,7 +233,7 @@ const Sidebar = () => {
               </div>
               <div >
                 <div className='flex justify-between items-center py-[10px]'>
-                <p className={`text-[14px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 ` }
+                <p className={`text-[14px] font-paragraph  cursor-pointer hover:text-primary_color duration-300 ${location.pathname == '/personalcare' && 'text-primary_color font-bold'}` }
                  onClick={()=>setPersonal(!personal)}>
                   <Link to='/personalcare'>Personal Care</Link>
                  </p>
@@ -252,7 +256,7 @@ const Sidebar = () => {
               </div>
               <div >
                 <div className='flex justify-between items-center py-[10px]'>
-                <p className={`text-[14px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 ` }
+                <p className={`text-[14px] font-paragraph  cursor-pointer hover:text-primary_color duration-300 ${location.pathname == '/kbeauty' && 'text-primary_color font-bold'}` }
                  onClick={()=>setBeauty(!beauty)}>
                   <Link to='/kbeauty'>K-Beauty</Link>
                  </p>
@@ -307,7 +311,7 @@ const Sidebar = () => {
               </div>
               <div >
                 <div className='flex justify-between items-center py-[10px]'>
-                <p className={`text-[14px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 ` }
+                <p className={`text-[14px] font-paragraph  cursor-pointer hover:text-primary_color duration-300 ${location.pathname == '/mom&baby' && 'text-primary_color font-bold'}` }
                  onClick={()=>setMom(!mom)}>
                   <Link to='/mom&baby'>Mom & Baby</Link>
                  </p>
@@ -358,7 +362,7 @@ const Sidebar = () => {
               </div>
               <div >
                 <div className='flex justify-between items-center py-[10px]'>
-                <p className={`text-[14px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 ` }
+                <p className={`text-[14px] font-paragraph  cursor-pointer hover:text-primary_color duration-300 ${location.pathname == '/undergarments' && 'text-primary_color font-bold'}` }
                  onClick={()=>setUnder(!under)}>
                   <Link to='/undergarments'>Undergarments</Link>
                  </p>
@@ -371,6 +375,33 @@ const Sidebar = () => {
                 </div>
                 <div className='flex justify-between items-center py-[3px]'>
                 <p className='text-[12px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 py-[5px]'>Panty</p>
+                <span  className='px-[5px] border-[1px]  border-primary_color text-primary_color rounded-lg '>1990</span>
+                </div>
+                </div>
+              </div>
+              <div >
+                <div className='flex justify-between items-center py-[10px]'>
+                <p className={`text-[14px] font-paragraph  cursor-pointer hover:text-primary_color duration-300 ${location.pathname == '/essential' && 'text-primary_color font-bold'}` }
+                 onClick={()=>setEssential(!essential)}>
+                  <Link to='/essential'>Essential</Link>
+                 </p>
+                <span className='px-[5px] text-white bg-primary_color rounded-lg font-bold'>500</span>
+                </div>
+                <div className={`makeup_items pl-[20px] duration-300 ease-in-out ${essential && 'hidden'}`}>
+                <div className='flex justify-between items-center py-[3px]'>
+                <p className='text-[12px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 py-[5px]'>Eyeliner</p>
+                <span className='px-[5px] border-[1px]  border-primary_color text-primary_color rounded-lg '>99</span>
+                </div>
+                <div className='flex justify-between items-center py-[3px]'>
+                <p className='text-[12px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 py-[5px]'>Eye Care</p>
+                <span  className='px-[5px] border-[1px]  border-primary_color text-primary_color rounded-lg '>1990</span>
+                </div>
+                <div className='flex justify-between items-center py-[3px]'>
+                <p className='text-[12px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 py-[5px]'>Hair Styling</p>
+                <span  className='px-[5px] border-[1px]  border-primary_color text-primary_color rounded-lg '>1990</span>
+                </div>
+                <div className='flex justify-between items-center py-[3px]'>
+                <p className='text-[12px] font-paragraph text-secondry_color cursor-pointer hover:text-primary_color duration-300 py-[5px]'>Hands & Feet</p>
                 <span  className='px-[5px] border-[1px]  border-primary_color text-primary_color rounded-lg '>1990</span>
                 </div>
                 </div>

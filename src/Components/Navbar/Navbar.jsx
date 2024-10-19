@@ -12,12 +12,12 @@ const Navbar = () => {
     useEffect(()=>{
         window.addEventListener("scroll",function(){
             var header = document.querySelector('.header')
-            header.classList.toggle('fixed' , window.scrollY > 0)
+            header.classList.toggle('sticky' , window.scrollY > 150)
         })
     },[])
   return (
     <>
-    <nav className='bg-secondry_color header top-0 left-0 w-full z-[999] ease-in duration-300 delay-300'>
+    <nav className='bg-secondry_color header top-0 left-0 w-full z-[999] '>
         <div className="container">
             <div className="nav_main">
                 <div className="nav_top flex justify-between items-center ">
