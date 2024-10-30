@@ -86,9 +86,7 @@ const Menu = () => {
                   <div className='flex items-center gap-[5px]'>MAKEUP <IoIosArrowDown /></div>
                   <div className='makeup_item absolute text-white text-[14px] font-thin bg-secondry_color top-[30px] w-[150px] left-[-10px] flex justify-center items-center rounded-lg hidden duration-400 z-[99]'>
                     <ul className=' p-[20px] '>
-                      <li className='py-[5px] hover:text-primary_color duration-300'>
-                        <Link to='/makeup/face'>Face</Link>
-                      </li>
+                      <li className='py-[5px] hover:text-primary_color duration-300'>Face</li>
                       <li className='py-[5px] hover:text-primary_color duration-300'>Lips</li>
                       <li className='py-[5px] hover:text-primary_color duration-300'>Nails</li>
                       <li className='py-[5px] hover:text-primary_color duration-300'>Foundation</li>

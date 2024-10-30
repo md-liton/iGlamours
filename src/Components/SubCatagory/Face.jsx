@@ -2,7 +2,7 @@ import React from 'react'
 
 const Face = () => {
   return (
-    <div>Face</div>
+    <div>ami face</div>
   )
 }
 
