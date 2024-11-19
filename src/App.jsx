@@ -23,6 +23,7 @@ import Concealer from "./Components/SubCatagory/Concealer";
 import Mascara from "./Components/SubCatagory/Mascara";
 import Blush from "./Components/SubCatagory/Blush";
 import Eyeliner from "./Components/SubCatagory/Eyeliner";
+import SkinCareFace from "./Components/SubCatagory/SkinCareFace";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -32,25 +33,34 @@ const router = createBrowserRouter(
 
 
 
-      <Route path="/makeup/face" element={<Face />}/>
-      <Route path="/makeup/lips" element={<Lips />}/>
-      <Route path="/makeup/nails" element={<Nails />}/>
-      <Route path="/makeup/foundation" element={<Foundation />}/>
-      <Route path="/makeup/concealer" element={<Concealer />}/>
-      <Route path="/makeup/mascara" element={<Mascara />}/>
-      <Route path="/makeup/eyeliner" element={<Eyeliner />}/>
-      <Route path="/makeup/blush" element={<Blush />}/>
-
-
-
-
-
-
-
-
-
         <Route path="/makeup" element={<Makeup />} />
+        <Route path="/makeup/face" element={<Face />} />
+        <Route path="/makeup/lips" element={<Lips />} />
+        <Route path="/makeup/nails" element={<Nails />} />
+        <Route path="/makeup/foundation" element={<Foundation />} />
+        <Route path="/makeup/concealer" element={<Concealer />} />
+        <Route path="/makeup/mascara" element={<Mascara />} />
+        <Route path="/makeup/eyeliner" element={<Eyeliner />} />
+        <Route path="/makeup/blush" element={<Blush />} />
+
+
+
+
+
+
+
+
+
         <Route path="/skincare" element={<Skincare />} />
+        <Route path="/skincare/face" element={<SkinCareFace />}/>
+
+
+
+
+
+
+
+
         <Route path="/hair" element={<Hair />} />
         <Route path="/personalcare" element={<Personalcare />} />
         <Route path="/kbeauty" element={<Kbeauty />} />
