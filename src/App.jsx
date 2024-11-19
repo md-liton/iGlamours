@@ -44,6 +44,17 @@ import Sunscreen from "./Components/SubCatagory/Sunscreen";
 import Essence from "./Components/SubCatagory/Essence";
 import FacialWipes from "./Components/SubCatagory/FacialWipes";
 import ScrubsAndExfoliators from "./Components/SubCatagory/ScrubsAndExfoliators";
+import BabyProducts from "./Components/SubCatagory/BabyProducts";
+import CreamsAndMoisturizers from "./Components/SubCatagory/CreamsAndMoisturizers";
+import Lotion from "./Components/SubCatagory/Lotion";
+import Oil from "./Components/SubCatagory/Oil";
+import Powder from "./Components/SubCatagory/Powder";
+import Shampoo from "./Components/SubCatagory/Shampoo";
+import SoapAndBodywash from "./Components/SubCatagory/SoapAndBodywash";
+import BathTime from "./Components/SubCatagory/BathTime";
+import BabyCare from "./Components/SubCatagory/BabyCare";
+import Bra from "./Components/SubCatagory/Bra";
+import Panty from "./Components/SubCatagory/Panty";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -113,7 +124,27 @@ const router = createBrowserRouter(
 
 
         <Route path="/mom&baby" element={<Mom />} />
+        <Route path="/mom&baby/babyproducts" element={<BabyProducts/>} />
+        <Route path="/mom&baby/creams&moisturizers" element={<CreamsAndMoisturizers />} />
+        <Route path="/mom&baby/lotion" element={<Lotion/>} />
+        <Route path="/mom&baby/oil" element={<Oil />} />
+        <Route path="/mom&baby/powder" element={<Powder />} />
+        <Route path="/mom&baby/shampoo" element={<Shampoo />} />
+        <Route path="/mom&baby/soap&bodywash" element={<SoapAndBodywash />} />
+        <Route path="/mom&baby/bathtime" element={<BathTime />} />
+        <Route path="/mom&baby/babycare" element={<BabyCare/>} />
+        
+
+
+
+
         <Route path="/undergarments" element={<Undergarments />} />
+        <Route path="/undergarments/bra" element={<Bra />} />
+        <Route path="/undergarments/panty" element={<Panty />} />
+
+
+
+
         <Route path="/essential" element={<Essential />} />
         <Route path="/blog" element={<Blog />} />
       </Route>

@@ -6,7 +6,7 @@ import product3 from '../../assets/product3.jpg'
 import Sidebar from '../Sidebar/Sidebar'
 import { FaSearch } from 'react-icons/fa'
 
-const SleepingMask = () => {
+const Powder = () => {
   return (
     <section className=''>
       
@@ -14,7 +14,7 @@ const SleepingMask = () => {
         <img src={bg} alt="img" className='h-[200px] w-full' />
       </div>
       <div className="container">
-        <div className="sleepingmask_main flex py-[40px]">
+        <div className="powder_main flex py-[40px]">
           <div className='w-1/4'>
           <Sidebar/>
           </div>
@@ -224,4 +224,4 @@ const SleepingMask = () => {
   )
 }
 
-export default SleepingMask
+export default Powder

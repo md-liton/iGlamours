@@ -140,17 +140,17 @@ const Menu = () => {
                   <div className='flex items-center gap-[5px]'>K-BEAUTY <IoIosArrowDown /></div> 
                   <div  className='kbeauty_item absolute text-white text-[14px] font-thin bg-secondry_color top-[30px] w-[200px] left-[-10px] flex justify-center items-center rounded-lg hidden duration-400 z-[99]'>
                   <ul className=' p-[20px] '>
-                      <li className='py-[5px] hover:text-primary_color duration-300'><Link to=''>Moisturizer</Link></li>
-                      <li className='py-[5px] hover:text-primary_color duration-300'><Link to=''>Sheet Mask</Link></li>
-                      <li className='py-[5px] hover:text-primary_color duration-300'><Link to=''>Toners & Astringents</Link></li>
-                      <li className='py-[5px] hover:text-primary_color duration-300'><Link to=''>Facewash</Link></li>
-                      <li className='py-[5px] hover:text-primary_color duration-300'><Link to=''>Cleanser</Link></li>
-                      <li className='py-[5px] hover:text-primary_color duration-300'><Link to=''>Serum/Oils</Link></li>
-                      <li className='py-[5px] hover:text-primary_color duration-300'><Link to=''>Sleeping Mask</Link></li>
-                      <li className='py-[5px] hover:text-primary_color duration-300'><Link to=''>Sunscreen</Link></li>
-                      <li className='py-[5px] hover:text-primary_color duration-300'><Link to=''>Essence</Link></li>
-                      <li className='py-[5px] hover:text-primary_color duration-300'><Link to=''>Facial Wipes</Link></li>
-                      <li className='py-[5px] hover:text-primary_color duration-300'><Link to=''>Scrubs & Exfoliators</Link></li>
+                      <li className='py-[5px] hover:text-primary_color duration-300'><Link to='/kbeauty/moisturizer'>Moisturizer</Link></li>
+                      <li className='py-[5px] hover:text-primary_color duration-300'><Link to='/kbeauty/sheetmask'>Sheet Mask</Link></li>
+                      <li className='py-[5px] hover:text-primary_color duration-300'><Link to='/kbeauty/toners&astringents'>Toners & Astringents</Link></li>
+                      <li className='py-[5px] hover:text-primary_color duration-300'><Link to='/kbeauty/facewash'>Facewash</Link></li>
+                      <li className='py-[5px] hover:text-primary_color duration-300'><Link to='/kbeauty/cleanser'>Cleanser</Link></li>
+                      <li className='py-[5px] hover:text-primary_color duration-300'><Link to='/kbeauty/serumoils'>Serum/Oils</Link></li>
+                      <li className='py-[5px] hover:text-primary_color duration-300'><Link to='/kbeauty/sleepingmask'>Sleeping Mask</Link></li>
+                      <li className='py-[5px] hover:text-primary_color duration-300'><Link to='/kbeauty/sunscreen'>Sunscreen</Link></li>
+                      <li className='py-[5px] hover:text-primary_color duration-300'><Link to='/kbeauty/essence'>Essence</Link></li>
+                      <li className='py-[5px] hover:text-primary_color duration-300'><Link to='/kbeauty/facialwipes'>Facial Wipes</Link></li>
+                      <li className='py-[5px] hover:text-primary_color duration-300'><Link to='/kbeauty/scrubs&exfoliators'>Scrubs & Exfoliators</Link></li>
                     </ul>
                   </div>
                 </Link>
@@ -160,16 +160,15 @@ const Menu = () => {
                   <div className='flex items-center gap-[5px]'>MOM & BABY <IoIosArrowDown /></div>
                   <div className='mom_item absolute text-white text-[14px] font-thin bg-secondry_color top-[30px] w-[200px] left-[-10px] flex justify-center items-center rounded-lg hidden duration-400 z-[99]'>
                   <ul className=' p-[20px] '>
-                      <li className='py-[5px] hover:text-primary_color duration-300'>Baby Products</li>
-                      <li className='py-[5px] hover:text-primary_color duration-300'>Creams & Moisturizers</li>
-                      <li className='py-[5px] hover:text-primary_color duration-300'>Lotion</li>
-                      <li className='py-[5px] hover:text-primary_color duration-300'>Oil</li>
-                      <li className='py-[5px] hover:text-primary_color duration-300'>Powder</li>
-                      <li className='py-[5px] hover:text-primary_color duration-300'>Shampoo</li>
-                      <li className='py-[5px] hover:text-primary_color duration-300'>Soap & Bodywash</li>
-                      <li className='py-[5px] hover:text-primary_color duration-300'>Bath Time</li>
-                      <li className='py-[5px] hover:text-primary_color duration-300'>Sunscreen</li>
-                      <li className='py-[5px] hover:text-primary_color duration-300'>Baby Care</li>
+                      <li className='py-[5px] hover:text-primary_color duration-300'><Link to='/mom&baby/babyproducts'>Baby Products</Link></li>
+                      <li className='py-[5px] hover:text-primary_color duration-300'><Link to='/mom&baby/creams&moisturizers'>Creams & Moisturizers</Link></li>
+                      <li className='py-[5px] hover:text-primary_color duration-300'><Link to='/mom&baby/lotion'>Lotion</Link></li>
+                      <li className='py-[5px] hover:text-primary_color duration-300'><Link to='/mom&baby/oil'>Oil</Link></li>
+                      <li className='py-[5px] hover:text-primary_color duration-300'><Link to='/mom&baby/powder'>Powder</Link></li>
+                      <li className='py-[5px] hover:text-primary_color duration-300'><Link to='/mom&baby/shampoo'>Shampoo</Link></li>
+                      <li className='py-[5px] hover:text-primary_color duration-300'><Link to='/mom&baby/soap&bodywash'>Soap & Bodywash</Link></li>
+                      <li className='py-[5px] hover:text-primary_color duration-300'><Link to='/mom&baby/bathtime'>Bath Time</Link></li>
+                      <li className='py-[5px] hover:text-primary_color duration-300'><Link to='/mom&baby/babycare'>Baby Care</Link></li>
                     </ul>
                   </div>
                 </Link>
@@ -178,8 +177,8 @@ const Menu = () => {
                   <div className='flex items-center gap-[5px]'>UNDERGARMENTS <IoIosArrowDown /></div>
                   <div className='undergarments_item absolute text-white text-[14px] font-thin bg-secondry_color top-[30px] w-[200px] left-[-10px] flex justify-center items-center rounded-lg hidden duration-400 z-[99]'>
                   <ul className=' p-[20px] '>
-                      <li className='py-[5px] hover:text-primary_color duration-300'>Bra</li>
-                      <li className='py-[5px] hover:text-primary_color duration-300'>Panty</li>
+                      <li className='py-[5px] hover:text-primary_color duration-300'><Link to='/undergarments/bra'>Bra</Link></li>
+                      <li className='py-[5px] hover:text-primary_color duration-300'><Link to='/undergarments/panty'>Panty</Link></li>
                     </ul>
                   </div>
                   </Link>
