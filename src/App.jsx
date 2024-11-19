@@ -24,6 +24,26 @@ import Mascara from "./Components/SubCatagory/Mascara";
 import Blush from "./Components/SubCatagory/Blush";
 import Eyeliner from "./Components/SubCatagory/Eyeliner";
 import SkinCareFace from "./Components/SubCatagory/SkinCareFace";
+import EyeCare from "./Components/SubCatagory/EyeCare";
+import HandsAndFeet from "./Components/SubCatagory/HandsAndFeet";
+import ShopConcern from "./Components/SubCatagory/ShopConcern";
+import HairAccessories from "./Components/SubCatagory/HairAccessories";
+import HairCare from "./Components/SubCatagory/HairCare";
+import HairStyling from "./Components/SubCatagory/HairStyling";
+import HairTreatment from "./Components/SubCatagory/HairTreatment";
+import BathAndShower from "./Components/SubCatagory/BathAndShower";
+import SanitaryNapkins from "./Components/SubCatagory/SanitaryNapkins";
+import Moisturizer from "./Components/SubCatagory/Moisturizer";
+import SheetMask from "./Components/SubCatagory/SheetMask";
+import TonersAndAstringents from "./Components/SubCatagory/TonersAndAstringents";
+import Facewash from "./Components/SubCatagory/Facewash";
+import Cleanser from "./Components/SubCatagory/Cleanser";
+import SerumOils from "./Components/SubCatagory/SerumOils";
+import SleepingMask from "./Components/SubCatagory/SleepingMask";
+import Sunscreen from "./Components/SubCatagory/Sunscreen";
+import Essence from "./Components/SubCatagory/Essence";
+import FacialWipes from "./Components/SubCatagory/FacialWipes";
+import ScrubsAndExfoliators from "./Components/SubCatagory/ScrubsAndExfoliators";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -47,12 +67,11 @@ const router = createBrowserRouter(
 
 
 
-
-
-
-
         <Route path="/skincare" element={<Skincare />} />
         <Route path="/skincare/face" element={<SkinCareFace />}/>
+        <Route path="/skincare/eyecare" element={<EyeCare />}/>
+        <Route path="/skincare/hands&feet" element={<HandsAndFeet />}/>
+        <Route path="/skincare/shopbyconcern" element={<ShopConcern />}/>
 
 
 
@@ -61,9 +80,38 @@ const router = createBrowserRouter(
 
 
 
-        <Route path="/hair" element={<Hair />} />
+        <Route path="/hair" element={<Hair />} />        
+        <Route path="/hair/hairaccessories" element={<HairAccessories />} />        
+        <Route path="/hair/haircare" element={<HairCare />} />        
+        <Route path="/hair/hairstyling" element={<HairStyling />} />        
+        <Route path="/hair/hairtreatment" element={<HairTreatment />} />     
+
+
+
+
         <Route path="/personalcare" element={<Personalcare />} />
+        <Route path="/personalcare/Bath&Shower" element={<BathAndShower/>} />
+        <Route path="/personalcare/SanitaryNapkins" element={<SanitaryNapkins/>} />
+
+
+
         <Route path="/kbeauty" element={<Kbeauty />} />
+        <Route path="/kbeauty/moisturizer" element={<Moisturizer />} />
+        <Route path="/kbeauty/sheetmask" element={<SheetMask />} />
+        <Route path="/kbeauty/toners&astringents" element={<TonersAndAstringents />} />
+        <Route path="/kbeauty/facewash" element={<Facewash />} />
+        <Route path="/kbeauty/cleanser" element={<Cleanser />} />
+        <Route path="/kbeauty/serumoils" element={<SerumOils />} />
+        <Route path="/kbeauty/sleepingmask" element={<SleepingMask/>} />
+        <Route path="/kbeauty/sunscreen" element={<Sunscreen />} />
+        <Route path="/kbeauty/essence" element={<Essence />} />
+        <Route path="/kbeauty/facialwipes" element={<FacialWipes />} />
+        <Route path="/kbeauty/scrubs&exfoliators" element={<ScrubsAndExfoliators />} />
+
+
+
+
+
         <Route path="/mom&baby" element={<Mom />} />
         <Route path="/undergarments" element={<Undergarments />} />
         <Route path="/essential" element={<Essential />} />
