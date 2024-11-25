@@ -36,7 +36,7 @@ const Allproducts = () => {
           {
             breakpoint: 480,
             settings: {
-              slidesToShow: 1,
+              slidesToShow: 2,
               slidesToScroll: 1
             }
           }
@@ -54,118 +54,87 @@ const Allproducts = () => {
                 <h1 className='text-primary_color text-[40px] font-bold font-heading px-[10px] mt-[30px]'>Makeup</h1>
 
                   <Slider {...settings} >
-                      <div className='border rounded-[20px] cursor-pointer  p-[15px]  bg-white '>
-                          <div className=' '>
-                              <img src={product} alt="img" className=']' />
+                      <div className='border rounded-[20px] cursor-pointer p-[4px] md:p-[15px]  bg-white '>
+                          <div className=' flex justify-center items-center '>
+                              <img src={product} alt="img" className='w-[150px] md:w-full rounded-[20px]' />
                           </div>
                           <div>
-                              <h4 className='text-[18px] font-bold font-heading text-secondry_color'>Lightness Keratin Treatment – Black</h4>
+                              <h4 className='md:text-[18px] font-bold font-heading text-secondry_color'>Lightness Keratin Treatment – Black</h4>
                               <p className='text-[12px] font-semibold font-paragraph py-[10px]'>HAIR,Hair Care,Hair Treatment,Hair Styling</p>
                               <div className='flex gap-[15px]'>
                                   <span className='text-[#A5A5A5]'><s>2200Tk</s></span>
                                   <span className='text-[15px] font-bold font-heading text-primary_color'>1699TK</span>
                               </div>
                               <div className="btn flex justify-center items-center py-[15px]">
-                                  <button className='py-[10px] px-[15px] border-[1px] border-primary_color bg-primary_color rounded-lg font-bold font-heading text-white hover:bg-transparent hover:text-secondry_color duration-300'>ADD TO CART</button>
+                                  <button className='md:py-[10px] md:px-[15px] py-[8px] px-[12px] border-[1px] border-primary_color bg-primary_color rounded-lg font-bold font-heading text-white hover:bg-transparent hover:text-secondry_color duration-300'>ADD TO CART</button>
                               </div>
                           </div>
                       </div>
-                      <div className='border rounded-[20px] cursor-pointer  p-[15px]  bg-white '>
-                          <div className=' '>
-                              <img src={product2} alt="img" className=']' />
+                      <div className='border rounded-[20px] cursor-pointer p-[4px] md:p-[15px]  bg-white '>
+                          <div className=' flex justify-center items-center '>
+                              <img src={product2} alt="img" className='w-[150px] md:w-full rounded-[20px]' />
                           </div>
                           <div>
-                              <h4 className='text-[18px] font-bold font-heading text-secondry_color'>Lightness Keratin Treatment – Black</h4>
+                              <h4 className='md:text-[18px] font-bold font-heading text-secondry_color'>Lightness Keratin Treatment – Black</h4>
                               <p className='text-[12px] font-semibold font-paragraph py-[10px]'>HAIR,Hair Care,Hair Treatment,Hair Styling</p>
                               <div className='flex gap-[15px]'>
                                   <span className='text-[#A5A5A5]'><s>2200Tk</s></span>
                                   <span className='text-[15px] font-bold font-heading text-primary_color'>1699TK</span>
                               </div>
                               <div className="btn flex justify-center items-center py-[15px]">
-                                  <button className='py-[10px] px-[15px] border-[1px] border-primary_color bg-primary_color rounded-lg font-bold font-heading text-white hover:bg-transparent hover:text-secondry_color duration-300'>ADD TO CART</button>
+                                  <button className='md:py-[10px] md:px-[15px] py-[8px] px-[12px] border-[1px] border-primary_color bg-primary_color rounded-lg font-bold font-heading text-white hover:bg-transparent hover:text-secondry_color duration-300'>ADD TO CART</button>
                               </div>
                           </div>
                       </div>
-                      <div className='border rounded-[20px] cursor-pointer  p-[15px]  bg-white '>
-                          <div className=' '>
-                              <img src={product3} alt="img" className=']' />
+                      <div className='border rounded-[20px] cursor-pointer p-[4px] md:p-[15px]  bg-white '>
+                          <div className=' flex justify-center items-center '>
+                              <img src={product3} alt="img" className='w-[150px] md:w-full rounded-[20px]' />
                           </div>
                           <div>
-                              <h4 className='text-[18px] font-bold font-heading text-secondry_color'>Lightness Keratin Treatment – Black</h4>
+                              <h4 className='md:text-[18px] font-bold font-heading text-secondry_color'>Lightness Keratin Treatment – Black</h4>
                               <p className='text-[12px] font-semibold font-paragraph py-[10px]'>HAIR,Hair Care,Hair Treatment,Hair Styling</p>
                               <div className='flex gap-[15px]'>
                                   <span className='text-[#A5A5A5]'><s>2200Tk</s></span>
                                   <span className='text-[15px] font-bold font-heading text-primary_color'>1699TK</span>
                               </div>
                               <div className="btn flex justify-center items-center py-[15px]">
-                                  <button className='py-[10px] px-[15px] border-[1px] border-primary_color bg-primary_color rounded-lg font-bold font-heading text-white hover:bg-transparent hover:text-secondry_color duration-300'>ADD TO CART</button>
+                                  <button className='md:py-[10px] md:px-[15px] py-[8px] px-[12px] border-[1px] border-primary_color bg-primary_color rounded-lg font-bold font-heading text-white hover:bg-transparent hover:text-secondry_color duration-300'>ADD TO CART</button>
                               </div>
                           </div>
                       </div>
-                      <div className='border rounded-[20px] cursor-pointer  p-[15px]  bg-white '>
-                          <div className=' '>
-                              <img src={product} alt="img" className=']' />
+                      <div className='border rounded-[20px] cursor-pointer p-[4px] md:p-[15px]  bg-white '>
+                          <div className=' flex justify-center items-center '>
+                              <img src={product} alt="img" className='w-[150px] md:w-full rounded-[20px]' />
                           </div>
                           <div>
-                              <h4 className='text-[18px] font-bold font-heading text-secondry_color'>Lightness Keratin Treatment – Black</h4>
+                              <h4 className='md:text-[18px] font-bold font-heading text-secondry_color'>Lightness Keratin Treatment – Black</h4>
                               <p className='text-[12px] font-semibold font-paragraph py-[10px]'>HAIR,Hair Care,Hair Treatment,Hair Styling</p>
                               <div className='flex gap-[15px]'>
                                   <span className='text-[#A5A5A5]'><s>2200Tk</s></span>
                                   <span className='text-[15px] font-bold font-heading text-primary_color'>1699TK</span>
                               </div>
                               <div className="btn flex justify-center items-center py-[15px]">
-                                  <button className='py-[10px] px-[15px] border-[1px] border-primary_color bg-primary_color rounded-lg font-bold font-heading text-white hover:bg-transparent hover:text-secondry_color duration-300'>ADD TO CART</button>
+                                  <button className='md:py-[10px] md:px-[15px] py-[8px] px-[12px] border-[1px] border-primary_color bg-primary_color rounded-lg font-bold font-heading text-white hover:bg-transparent hover:text-secondry_color duration-300'>ADD TO CART</button>
                               </div>
                           </div>
                       </div>
-                      <div className='border rounded-[20px] cursor-pointer  p-[15px]  bg-white '>
-                          <div className=' '>
-                              <img src={product2} alt="img" className=']' />
+                      <div className='border rounded-[20px] cursor-pointer p-[4px] md:p-[15px]  bg-white '>
+                          <div className=' flex justify-center items-center '>
+                              <img src={product2} alt="img" className='w-[150px] md:w-full rounded-[20px]' />
                           </div>
                           <div>
-                              <h4 className='text-[18px] font-bold font-heading text-secondry_color'>Lightness Keratin Treatment – Black</h4>
+                              <h4 className='md:text-[18px] font-bold font-heading text-secondry_color'>Lightness Keratin Treatment – Black</h4>
                               <p className='text-[12px] font-semibold font-paragraph py-[10px]'>HAIR,Hair Care,Hair Treatment,Hair Styling</p>
                               <div className='flex gap-[15px]'>
                                   <span className='text-[#A5A5A5]'><s>2200Tk</s></span>
                                   <span className='text-[15px] font-bold font-heading text-primary_color'>1699TK</span>
                               </div>
                               <div className="btn flex justify-center items-center py-[15px]">
-                                  <button className='py-[10px] px-[15px] border-[1px] border-primary_color bg-primary_color rounded-lg font-bold font-heading text-white hover:bg-transparent hover:text-secondry_color duration-300'>ADD TO CART</button>
+                                  <button className='md:py-[10px] md:px-[15px] py-[8px] px-[12px] border-[1px] border-primary_color bg-primary_color rounded-lg font-bold font-heading text-white hover:bg-transparent hover:text-secondry_color duration-300'>ADD TO CART</button>
                               </div>
                           </div>
                       </div>
-                      <div className='border rounded-[20px] cursor-pointer  p-[15px]  bg-white '>
-                          <div className=' '>
-                              <img src={product3} alt="img" className=']' />
-                          </div>
-                          <div>
-                              <h4 className='text-[18px] font-bold font-heading text-secondry_color'>Lightness Keratin Treatment – Black</h4>
-                              <p className='text-[12px] font-semibold font-paragraph py-[10px]'>HAIR,Hair Care,Hair Treatment,Hair Styling</p>
-                              <div className='flex gap-[15px]'>
-                                  <span className='text-[#A5A5A5]'><s>2200Tk</s></span>
-                                  <span className='text-[15px] font-bold font-heading text-primary_color'>1699TK</span>
-                              </div>
-                              <div className="btn flex justify-center items-center py-[15px]">
-                                  <button className='py-[10px] px-[15px] border-[1px] border-primary_color bg-primary_color rounded-lg font-bold font-heading text-white hover:bg-transparent hover:text-secondry_color duration-300'>ADD TO CART</button>
-                              </div>
-                          </div>
-                      </div>
-                      <div className='border rounded-[20px] cursor-pointer  p-[15px]  bg-white '>
-                          <div className=' '>
-                              <img src={product} alt="img" className=']' />
-                          </div>
-                          <div>
-                              <h4 className='text-[18px] font-bold font-heading text-secondry_color'>Lightness Keratin Treatment – Black</h4>
-                              <p className='text-[12px] font-semibold font-paragraph py-[10px]'>HAIR,Hair Care,Hair Treatment,Hair Styling</p>
-                              <div className='flex gap-[15px]'>
-                                  <span className='text-[#A5A5A5]'><s>2200Tk</s></span>
-                                  <span className='text-[15px] font-bold font-heading text-primary_color'>1699TK</span>
-                              </div>
-                              <div className="btn flex justify-center items-center py-[15px]">
-                                  <button className='py-[10px] px-[15px] border-[1px] border-primary_color bg-primary_color rounded-lg font-bold font-heading text-white hover:bg-transparent hover:text-secondry_color duration-300'>ADD TO CART</button>
-                              </div>
-                          </div>
-                      </div>
+                     
                   </Slider>
 
 
@@ -173,236 +142,174 @@ const Allproducts = () => {
 
                   <h1 className='text-primary_color text-[40px] font-bold font-heading px-[10px] mt-[30px]'>Skin Care</h1>
                   <Slider {...settings} >
-                      <div className='border rounded-[20px] cursor-pointer  p-[15px]  bg-white '>
-                          <div className=' '>
-                              <img src={product} alt="img" className=']' />
+                      <div className='border rounded-[20px] cursor-pointer p-[4px] md:p-[15px]  bg-white '>
+                          <div className=' flex justify-center items-center '>
+                              <img src={product} alt="img" className='w-[150px] md:w-full rounded-[20px]' />
                           </div>
                           <div>
-                              <h4 className='text-[18px] font-bold font-heading text-secondry_color'>Lightness Keratin Treatment – Black</h4>
+                              <h4 className='md:text-[18px] font-bold font-heading text-secondry_color'>Lightness Keratin Treatment – Black</h4>
                               <p className='text-[12px] font-semibold font-paragraph py-[10px]'>HAIR,Hair Care,Hair Treatment,Hair Styling</p>
                               <div className='flex gap-[15px]'>
                                   <span className='text-[#A5A5A5]'><s>2200Tk</s></span>
                                   <span className='text-[15px] font-bold font-heading text-primary_color'>1699TK</span>
                               </div>
                               <div className="btn flex justify-center items-center py-[15px]">
-                                  <button className='py-[10px] px-[15px] border-[1px] border-primary_color bg-primary_color rounded-lg font-bold font-heading text-white hover:bg-transparent hover:text-secondry_color duration-300'>ADD TO CART</button>
+                                  <button className='md:py-[10px] md:px-[15px] py-[8px] px-[12px] border-[1px] border-primary_color bg-primary_color rounded-lg font-bold font-heading text-white hover:bg-transparent hover:text-secondry_color duration-300'>ADD TO CART</button>
                               </div>
                           </div>
                       </div>
-                      <div className='border rounded-[20px] cursor-pointer  p-[15px]  bg-white '>
-                          <div className=' '>
-                              <img src={product2} alt="img" className=']' />
+                      <div className='border rounded-[20px] cursor-pointer p-[4px] md:p-[15px]  bg-white '>
+                          <div className=' flex justify-center items-center '>
+                              <img src={product2} alt="img" className='w-[150px] md:w-full rounded-[20px]' />
                           </div>
                           <div>
-                              <h4 className='text-[18px] font-bold font-heading text-secondry_color'>Lightness Keratin Treatment – Black</h4>
+                              <h4 className='md:text-[18px] font-bold font-heading text-secondry_color'>Lightness Keratin Treatment – Black</h4>
                               <p className='text-[12px] font-semibold font-paragraph py-[10px]'>HAIR,Hair Care,Hair Treatment,Hair Styling</p>
                               <div className='flex gap-[15px]'>
                                   <span className='text-[#A5A5A5]'><s>2200Tk</s></span>
                                   <span className='text-[15px] font-bold font-heading text-primary_color'>1699TK</span>
                               </div>
                               <div className="btn flex justify-center items-center py-[15px]">
-                                  <button className='py-[10px] px-[15px] border-[1px] border-primary_color bg-primary_color rounded-lg font-bold font-heading text-white hover:bg-transparent hover:text-secondry_color duration-300'>ADD TO CART</button>
+                                  <button className='md:py-[10px] md:px-[15px] py-[8px] px-[12px] border-[1px] border-primary_color bg-primary_color rounded-lg font-bold font-heading text-white hover:bg-transparent hover:text-secondry_color duration-300'>ADD TO CART</button>
                               </div>
                           </div>
                       </div>
-                      <div className='border rounded-[20px] cursor-pointer  p-[15px]  bg-white '>
-                          <div className=' '>
-                              <img src={product3} alt="img" className=']' />
+                      <div className='border rounded-[20px] cursor-pointer p-[4px] md:p-[15px]  bg-white '>
+                          <div className=' flex justify-center items-center '>
+                              <img src={product3} alt="img" className='w-[150px] md:w-full rounded-[20px]' />
                           </div>
                           <div>
-                              <h4 className='text-[18px] font-bold font-heading text-secondry_color'>Lightness Keratin Treatment – Black</h4>
+                              <h4 className='md:text-[18px] font-bold font-heading text-secondry_color'>Lightness Keratin Treatment – Black</h4>
                               <p className='text-[12px] font-semibold font-paragraph py-[10px]'>HAIR,Hair Care,Hair Treatment,Hair Styling</p>
                               <div className='flex gap-[15px]'>
                                   <span className='text-[#A5A5A5]'><s>2200Tk</s></span>
                                   <span className='text-[15px] font-bold font-heading text-primary_color'>1699TK</span>
                               </div>
                               <div className="btn flex justify-center items-center py-[15px]">
-                                  <button className='py-[10px] px-[15px] border-[1px] border-primary_color bg-primary_color rounded-lg font-bold font-heading text-white hover:bg-transparent hover:text-secondry_color duration-300'>ADD TO CART</button>
+                                  <button className='md:py-[10px] md:px-[15px] py-[8px] px-[12px] border-[1px] border-primary_color bg-primary_color rounded-lg font-bold font-heading text-white hover:bg-transparent hover:text-secondry_color duration-300'>ADD TO CART</button>
                               </div>
                           </div>
                       </div>
-                      <div className='border rounded-[20px] cursor-pointer  p-[15px]  bg-white '>
-                          <div className=' '>
-                              <img src={product} alt="img" className=']' />
+                      <div className='border rounded-[20px] cursor-pointer p-[4px] md:p-[15px]  bg-white '>
+                          <div className=' flex justify-center items-center '>
+                              <img src={product} alt="img" className='w-[150px] md:w-full rounded-[20px]' />
                           </div>
                           <div>
-                              <h4 className='text-[18px] font-bold font-heading text-secondry_color'>Lightness Keratin Treatment – Black</h4>
+                              <h4 className='md:text-[18px] font-bold font-heading text-secondry_color'>Lightness Keratin Treatment – Black</h4>
                               <p className='text-[12px] font-semibold font-paragraph py-[10px]'>HAIR,Hair Care,Hair Treatment,Hair Styling</p>
                               <div className='flex gap-[15px]'>
                                   <span className='text-[#A5A5A5]'><s>2200Tk</s></span>
                                   <span className='text-[15px] font-bold font-heading text-primary_color'>1699TK</span>
                               </div>
                               <div className="btn flex justify-center items-center py-[15px]">
-                                  <button className='py-[10px] px-[15px] border-[1px] border-primary_color bg-primary_color rounded-lg font-bold font-heading text-white hover:bg-transparent hover:text-secondry_color duration-300'>ADD TO CART</button>
+                                  <button className='md:py-[10px] md:px-[15px] py-[8px] px-[12px] border-[1px] border-primary_color bg-primary_color rounded-lg font-bold font-heading text-white hover:bg-transparent hover:text-secondry_color duration-300'>ADD TO CART</button>
                               </div>
                           </div>
                       </div>
-                      <div className='border rounded-[20px] cursor-pointer  p-[15px]  bg-white '>
-                          <div className=' '>
-                              <img src={product2} alt="img" className=']' />
+                      <div className='border rounded-[20px] cursor-pointer p-[4px] md:p-[15px]  bg-white '>
+                          <div className=' flex justify-center items-center '>
+                              <img src={product2} alt="img" className='w-[150px] md:w-full rounded-[20px]' />
                           </div>
                           <div>
-                              <h4 className='text-[18px] font-bold font-heading text-secondry_color'>Lightness Keratin Treatment – Black</h4>
+                              <h4 className='md:text-[18px] font-bold font-heading text-secondry_color'>Lightness Keratin Treatment – Black</h4>
                               <p className='text-[12px] font-semibold font-paragraph py-[10px]'>HAIR,Hair Care,Hair Treatment,Hair Styling</p>
                               <div className='flex gap-[15px]'>
                                   <span className='text-[#A5A5A5]'><s>2200Tk</s></span>
                                   <span className='text-[15px] font-bold font-heading text-primary_color'>1699TK</span>
                               </div>
                               <div className="btn flex justify-center items-center py-[15px]">
-                                  <button className='py-[10px] px-[15px] border-[1px] border-primary_color bg-primary_color rounded-lg font-bold font-heading text-white hover:bg-transparent hover:text-secondry_color duration-300'>ADD TO CART</button>
+                                  <button className='md:py-[10px] md:px-[15px] py-[8px] px-[12px] border-[1px] border-primary_color bg-primary_color rounded-lg font-bold font-heading text-white hover:bg-transparent hover:text-secondry_color duration-300'>ADD TO CART</button>
                               </div>
                           </div>
                       </div>
-                      <div className='border rounded-[20px] cursor-pointer  p-[15px]  bg-white '>
-                          <div className=' '>
-                              <img src={product3} alt="img" className=']' />
-                          </div>
-                          <div>
-                              <h4 className='text-[18px] font-bold font-heading text-secondry_color'>Lightness Keratin Treatment – Black</h4>
-                              <p className='text-[12px] font-semibold font-paragraph py-[10px]'>HAIR,Hair Care,Hair Treatment,Hair Styling</p>
-                              <div className='flex gap-[15px]'>
-                                  <span className='text-[#A5A5A5]'><s>2200Tk</s></span>
-                                  <span className='text-[15px] font-bold font-heading text-primary_color'>1699TK</span>
-                              </div>
-                              <div className="btn flex justify-center items-center py-[15px]">
-                                  <button className='py-[10px] px-[15px] border-[1px] border-primary_color bg-primary_color rounded-lg font-bold font-heading text-white hover:bg-transparent hover:text-secondry_color duration-300'>ADD TO CART</button>
-                              </div>
-                          </div>
-                      </div>
-                      <div className='border rounded-[20px] cursor-pointer  p-[15px]  bg-white '>
-                          <div className=' '>
-                              <img src={product} alt="img" className=']' />
-                          </div>
-                          <div>
-                              <h4 className='text-[18px] font-bold font-heading text-secondry_color'>Lightness Keratin Treatment – Black</h4>
-                              <p className='text-[12px] font-semibold font-paragraph py-[10px]'>HAIR,Hair Care,Hair Treatment,Hair Styling</p>
-                              <div className='flex gap-[15px]'>
-                                  <span className='text-[#A5A5A5]'><s>2200Tk</s></span>
-                                  <span className='text-[15px] font-bold font-heading text-primary_color'>1699TK</span>
-                              </div>
-                              <div className="btn flex justify-center items-center py-[15px]">
-                                  <button className='py-[10px] px-[15px] border-[1px] border-primary_color bg-primary_color rounded-lg font-bold font-heading text-white hover:bg-transparent hover:text-secondry_color duration-300'>ADD TO CART</button>
-                              </div>
-                          </div>
-                      </div>
+                     
                   </Slider>
 
                   <h1 className='text-primary_color text-[40px] font-bold font-heading px-[10px] mt-[30px]'>K-Beauty</h1>
 
 
                   <Slider {...settings} >
-                      <div className='border rounded-[20px] cursor-pointer  p-[15px]  bg-white '>
-                          <div className=' '>
-                              <img src={product} alt="img" className=']' />
+                      <div className='border rounded-[20px] cursor-pointer p-[4px] md:p-[15px]  bg-white '>
+                          <div className=' flex justify-center items-center '>
+                              <img src={product} alt="img" className='w-[150px] md:w-full rounded-[20px]' />
                           </div>
                           <div>
-                              <h4 className='text-[18px] font-bold font-heading text-secondry_color'>Lightness Keratin Treatment – Black</h4>
+                              <h4 className='md:text-[18px] font-bold font-heading text-secondry_color'>Lightness Keratin Treatment – Black</h4>
                               <p className='text-[12px] font-semibold font-paragraph py-[10px]'>HAIR,Hair Care,Hair Treatment,Hair Styling</p>
                               <div className='flex gap-[15px]'>
                                   <span className='text-[#A5A5A5]'><s>2200Tk</s></span>
                                   <span className='text-[15px] font-bold font-heading text-primary_color'>1699TK</span>
                               </div>
                               <div className="btn flex justify-center items-center py-[15px]">
-                                  <button className='py-[10px] px-[15px] border-[1px] border-primary_color bg-primary_color rounded-lg font-bold font-heading text-white hover:bg-transparent hover:text-secondry_color duration-300'>ADD TO CART</button>
+                                  <button className='md:py-[10px] md:px-[15px] py-[8px] px-[12px] border-[1px] border-primary_color bg-primary_color rounded-lg font-bold font-heading text-white hover:bg-transparent hover:text-secondry_color duration-300'>ADD TO CART</button>
                               </div>
                           </div>
                       </div>
-                      <div className='border rounded-[20px] cursor-pointer  p-[15px]  bg-white '>
-                          <div className=' '>
-                              <img src={product2} alt="img" className=']' />
+                      <div className='border rounded-[20px] cursor-pointer p-[4px] md:p-[15px]  bg-white '>
+                          <div className=' flex justify-center items-center '>
+                              <img src={product2} alt="img" className='w-[150px] md:w-full rounded-[20px]' />
                           </div>
                           <div>
-                              <h4 className='text-[18px] font-bold font-heading text-secondry_color'>Lightness Keratin Treatment – Black</h4>
+                              <h4 className='md:text-[18px] font-bold font-heading text-secondry_color'>Lightness Keratin Treatment – Black</h4>
                               <p className='text-[12px] font-semibold font-paragraph py-[10px]'>HAIR,Hair Care,Hair Treatment,Hair Styling</p>
                               <div className='flex gap-[15px]'>
                                   <span className='text-[#A5A5A5]'><s>2200Tk</s></span>
                                   <span className='text-[15px] font-bold font-heading text-primary_color'>1699TK</span>
                               </div>
                               <div className="btn flex justify-center items-center py-[15px]">
-                                  <button className='py-[10px] px-[15px] border-[1px] border-primary_color bg-primary_color rounded-lg font-bold font-heading text-white hover:bg-transparent hover:text-secondry_color duration-300'>ADD TO CART</button>
+                                  <button className='md:py-[10px] md:px-[15px] py-[8px] px-[12px] border-[1px] border-primary_color bg-primary_color rounded-lg font-bold font-heading text-white hover:bg-transparent hover:text-secondry_color duration-300'>ADD TO CART</button>
                               </div>
                           </div>
                       </div>
-                      <div className='border rounded-[20px] cursor-pointer  p-[15px]  bg-white '>
-                          <div className=' '>
-                              <img src={product3} alt="img" className=']' />
+                      <div className='border rounded-[20px] cursor-pointer p-[4px] md:p-[15px]  bg-white '>
+                          <div className=' flex justify-center items-center '>
+                              <img src={product3} alt="img" className='w-[150px] md:w-full rounded-[20px]' />
                           </div>
                           <div>
-                              <h4 className='text-[18px] font-bold font-heading text-secondry_color'>Lightness Keratin Treatment – Black</h4>
+                              <h4 className='md:text-[18px] font-bold font-heading text-secondry_color'>Lightness Keratin Treatment – Black</h4>
                               <p className='text-[12px] font-semibold font-paragraph py-[10px]'>HAIR,Hair Care,Hair Treatment,Hair Styling</p>
                               <div className='flex gap-[15px]'>
                                   <span className='text-[#A5A5A5]'><s>2200Tk</s></span>
                                   <span className='text-[15px] font-bold font-heading text-primary_color'>1699TK</span>
                               </div>
                               <div className="btn flex justify-center items-center py-[15px]">
-                                  <button className='py-[10px] px-[15px] border-[1px] border-primary_color bg-primary_color rounded-lg font-bold font-heading text-white hover:bg-transparent hover:text-secondry_color duration-300'>ADD TO CART</button>
+                                  <button className='md:py-[10px] md:px-[15px] py-[8px] px-[12px] border-[1px] border-primary_color bg-primary_color rounded-lg font-bold font-heading text-white hover:bg-transparent hover:text-secondry_color duration-300'>ADD TO CART</button>
                               </div>
                           </div>
                       </div>
-                      <div className='border rounded-[20px] cursor-pointer  p-[15px]  bg-white '>
-                          <div className=' '>
-                              <img src={product} alt="img" className=']' />
+                      <div className='border rounded-[20px] cursor-pointer p-[4px] md:p-[15px]  bg-white '>
+                          <div className=' flex justify-center items-center '>
+                              <img src={product} alt="img" className='w-[150px] md:w-full rounded-[20px]' />
                           </div>
                           <div>
-                              <h4 className='text-[18px] font-bold font-heading text-secondry_color'>Lightness Keratin Treatment – Black</h4>
+                              <h4 className='md:text-[18px] font-bold font-heading text-secondry_color'>Lightness Keratin Treatment – Black</h4>
                               <p className='text-[12px] font-semibold font-paragraph py-[10px]'>HAIR,Hair Care,Hair Treatment,Hair Styling</p>
                               <div className='flex gap-[15px]'>
                                   <span className='text-[#A5A5A5]'><s>2200Tk</s></span>
                                   <span className='text-[15px] font-bold font-heading text-primary_color'>1699TK</span>
                               </div>
                               <div className="btn flex justify-center items-center py-[15px]">
-                                  <button className='py-[10px] px-[15px] border-[1px] border-primary_color bg-primary_color rounded-lg font-bold font-heading text-white hover:bg-transparent hover:text-secondry_color duration-300'>ADD TO CART</button>
+                                  <button className='md:py-[10px] md:px-[15px] py-[8px] px-[12px] border-[1px] border-primary_color bg-primary_color rounded-lg font-bold font-heading text-white hover:bg-transparent hover:text-secondry_color duration-300'>ADD TO CART</button>
                               </div>
                           </div>
                       </div>
-                      <div className='border rounded-[20px] cursor-pointer  p-[15px]  bg-white '>
-                          <div className=' '>
-                              <img src={product2} alt="img" className=']' />
+                      <div className='border rounded-[20px] cursor-pointer p-[4px] md:p-[15px]  bg-white '>
+                          <div className=' flex justify-center items-center '>
+                              <img src={product2} alt="img" className='w-[150px] md:w-full rounded-[20px]' />
                           </div>
                           <div>
-                              <h4 className='text-[18px] font-bold font-heading text-secondry_color'>Lightness Keratin Treatment – Black</h4>
+                              <h4 className='md:text-[18px] font-bold font-heading text-secondry_color'>Lightness Keratin Treatment – Black</h4>
                               <p className='text-[12px] font-semibold font-paragraph py-[10px]'>HAIR,Hair Care,Hair Treatment,Hair Styling</p>
                               <div className='flex gap-[15px]'>
                                   <span className='text-[#A5A5A5]'><s>2200Tk</s></span>
                                   <span className='text-[15px] font-bold font-heading text-primary_color'>1699TK</span>
                               </div>
                               <div className="btn flex justify-center items-center py-[15px]">
-                                  <button className='py-[10px] px-[15px] border-[1px] border-primary_color bg-primary_color rounded-lg font-bold font-heading text-white hover:bg-transparent hover:text-secondry_color duration-300'>ADD TO CART</button>
+                                  <button className='md:py-[10px] md:px-[15px] py-[8px] px-[12px] border-[1px] border-primary_color bg-primary_color rounded-lg font-bold font-heading text-white hover:bg-transparent hover:text-secondry_color duration-300'>ADD TO CART</button>
                               </div>
                           </div>
                       </div>
-                      <div className='border rounded-[20px] cursor-pointer  p-[15px]  bg-white '>
-                          <div className=' '>
-                              <img src={product3} alt="img" className=']' />
-                          </div>
-                          <div>
-                              <h4 className='text-[18px] font-bold font-heading text-secondry_color'>Lightness Keratin Treatment – Black</h4>
-                              <p className='text-[12px] font-semibold font-paragraph py-[10px]'>HAIR,Hair Care,Hair Treatment,Hair Styling</p>
-                              <div className='flex gap-[15px]'>
-                                  <span className='text-[#A5A5A5]'><s>2200Tk</s></span>
-                                  <span className='text-[15px] font-bold font-heading text-primary_color'>1699TK</span>
-                              </div>
-                              <div className="btn flex justify-center items-center py-[15px]">
-                                  <button className='py-[10px] px-[15px] border-[1px] border-primary_color bg-primary_color rounded-lg font-bold font-heading text-white hover:bg-transparent hover:text-secondry_color duration-300'>ADD TO CART</button>
-                              </div>
-                          </div>
-                      </div>
-                      <div className='border rounded-[20px] cursor-pointer  p-[15px]  bg-white '>
-                          <div className=' '>
-                              <img src={product} alt="img" className=']' />
-                          </div>
-                          <div>
-                              <h4 className='text-[18px] font-bold font-heading text-secondry_color'>Lightness Keratin Treatment – Black</h4>
-                              <p className='text-[12px] font-semibold font-paragraph py-[10px]'>HAIR,Hair Care,Hair Treatment,Hair Styling</p>
-                              <div className='flex gap-[15px]'>
-                                  <span className='text-[#A5A5A5]'><s>2200Tk</s></span>
-                                  <span className='text-[15px] font-bold font-heading text-primary_color'>1699TK</span>
-                              </div>
-                              <div className="btn flex justify-center items-center py-[15px]">
-                                  <button className='py-[10px] px-[15px] border-[1px] border-primary_color bg-primary_color rounded-lg font-bold font-heading text-white hover:bg-transparent hover:text-secondry_color duration-300'>ADD TO CART</button>
-                              </div>
-                          </div>
-                      </div>
+                     
                   </Slider>
 
 

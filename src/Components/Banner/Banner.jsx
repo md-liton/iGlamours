@@ -21,21 +21,21 @@ const Banner = () => {
     autoplaySpeed: 1500,
   };
   return (
-    <section className='overflow-hidden h-[490px] w-full'>
+    <section className='overflow-hidden h-[250px] md:h-[490px] w-full'>
       <Slider {...settings} className='m-[-10px]'>
-        <div className="banner_main h-[490px] w-full">
+        <div className="banner_main h-[250px]  md:h-[490px] w-full">
           <img src={banner} className='w-full h-full' alt="img" />
         </div>
-        <div className="banner_main h-[490px] w-full">
+        <div className="banner_main h-[250px]  md:h-[490px] w-full">
           <img src={banner2} className='w-full h-full' alt="img" />
         </div>
-        <div className="banner_main h-[490px] w-full">
+        <div className="banner_main h-[250px]  md:h-[490px] w-full">
           <img src={banner3} className='w-full h-full' alt="img" />
         </div>
-        <div className="banner_main h-[490px] w-full">
+        <div className="banner_main h-[250px]  md:h-[490px] w-full">
           <img src={banner4} className='w-full h-full' alt="img" />
         </div>
-        <div className="banner_main h-[490px] w-full">
+        <div className="banner_main h-[250px]  md:h-[490px] w-full">
           <img src={banner5} className='w-full h-full' alt="img" />
         </div>
       </Slider>

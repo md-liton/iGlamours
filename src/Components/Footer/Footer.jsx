@@ -9,17 +9,17 @@ import { FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className='py-[40px] bg-secondry_color text-white '>
+    <footer className='md:py-[40px] py-[20px] bg-secondry_color text-white '>
         <div className="container">
-            <div className="footer_main flex  ">
-                <div className='w-1/2'>
+            <div className="footer_main md:flex  ">
+                <div className='md:w-1/2'>
                 <img src={logo} alt="" />
-                <h4 className='font-bold font-heading text-[25px]'><u>Our Store</u></h4>
-                <p className='text-[14px] font-paragraph font-normal py-[10px]'>355/1 Dilu Road, Mogbazar, Dhaka 1217</p>
+                <h4 className='font-bold font-heading md:text-[25px] text-[20px]'><u>Our Store</u></h4>
+                <p className='md:text-[14px] text-[12px] font-paragraph font-normal py-[10px]'>355/1 Dilu Road, Mogbazar, Dhaka 1217</p>
                 <h4 className='font-bold font-heading text-[25px]'><u>We Accept</u></h4>
                 <img src={pay} alt="img"  className='py-[10px] w-[320px]'/>
                 </div>
-                <div className='w-1/2 flex justify-between'>
+                <div className='md:w-1/2 flex justify-between'>
                 <div>
                 <h5 className='text-[18px] font-bold font-heading'>USEFUL LINKS</h5>
                 <ul className='text-[14px] font-paragraph font-normal py-[10px]'>
@@ -54,8 +54,8 @@ const Footer = () => {
             </div>
         </div>
         <div className='border-t-[1px] border-[#777] py-[10px] mt-[30px] text-center pt-[15px]'>
-            <p className='text-[#777]'>Based on <a href="" className='font-bold text-[18px] font-heading text-primary_color'>iGlamours </a> 2024 <a href="">Powered By <a href="" className='font-bold text-[18px] font-heading text-white'>DigitalKings Limited</a></a>.</p>
-            <p className='pt-[10px] text-[#777]'>Developer by <a href="https://mdliton.vercel.app/" target='_blank' className='font-bold text-[18px] font-heading text-white'>Md Liton</a></p>
+            <p className='text-[#777]'>Based on <a href="" className='font-bold md:text-[18px] font-heading text-primary_color'>iGlamours </a> 2024 <a href="">Powered By <a href="" className='font-bold md:text-[18px] font-heading text-white'>DigitalKings Limited</a></a>.</p>
+            <p className='pt-[10px] text-[#777]'>Developer by <a href="https://mdliton.vercel.app/" target='_blank' className='font-bold md:text-[18px] font-heading text-white'>Md Liton</a></p>
         </div>
     </footer>
   )

@@ -10,35 +10,35 @@ import img8 from '../../assets/k-beauty.png'
 
 const Catagory = () => {
   return (
-    <section className='py-[50px]'>
+    <section className='md:py-[50px] py-[30px]'>
         <div className="container">
             <div className="catagory_main">
-            <h2 className='font-bold text-[55px] font-heading text-secondry_color text-center py-[20px]'>Explore Endless Glamour</h2>
-                <div className='flex items-center gap-[20px]'>
-                    <div className='w-[300px] h-[300px] rounded-lg overflow-hidden cursor-pointer'>
+            <h2 className='font-bold md:text-[55px] text-[45px] font-heading text-secondry_color text-center py-[20px]'>Explore Endless Glamour</h2>
+                <div className='flex items-center gap-[20px] flex-wrap justify-center'>
+                    <div className='md:w-[300px] md:h-[300px] w-[200px] h-[200px] rounded-lg overflow-hidden cursor-pointer'>
                         <img src={img1} alt=""  className='w-full h-full'/>
                     </div>
-                    <div className='w-[300px] h-[300px] rounded-lg overflow-hidden cursor-pointer'>
+                    <div className='md:w-[300px] md:h-[300px] w-[200px] h-[200px] rounded-lg overflow-hidden cursor-pointer'>
                         <img src={img2} alt=""  className='w-full h-full'/>
                     </div>
-                    <div className='w-[300px] h-[300px] rounded-lg overflow-hidden cursor-pointer'>
+                    <div className='md:w-[300px] md:h-[300px] w-[200px] h-[200px] rounded-lg overflow-hidden cursor-pointer'>
                         <img src={img3} alt=""  className='w-full h-full'/>
                     </div>
-                    <div className='w-[300px] h-[300px] rounded-lg overflow-hidden cursor-pointer'>
+                    <div className='md:w-[300px] md:h-[300px] w-[200px] h-[200px] rounded-lg overflow-hidden cursor-pointer'>
                         <img src={img4} alt=""  className='w-full h-full'/>
                     </div>
                 </div>
-                <div className='flex items-center gap-[20px] mt-[20px]'>
-                    <div className='w-[300px] h-[300px] rounded-lg overflow-hidden cursor-pointer'>
+                <div className='flex items-center flex-wrap justify-center gap-[20px] mt-[20px]'>
+                    <div className='md:w-[300px] md:h-[300px] w-[200px] h-[200px] rounded-lg overflow-hidden cursor-pointer'>
                         <img src={img5} alt=""  className='w-full h-full'/>
                     </div>
-                    <div className='w-[300px] h-[300px] rounded-lg overflow-hidden cursor-pointer'>
+                    <div className='md:w-[300px] md:h-[300px] w-[200px] h-[200px] rounded-lg overflow-hidden cursor-pointer'>
                         <img src={img6} alt=""  className='w-full h-full'/>
                     </div>
-                    <div className='w-[300px] h-[300px] rounded-lg overflow-hidden cursor-pointer'>
+                    <div className='md:w-[300px] md:h-[300px] w-[200px] h-[200px] rounded-lg overflow-hidden cursor-pointer'>
                         <img src={img7} alt=""  className='w-full h-full'/>
                     </div>
-                    <div className='w-[300px] h-[300px] rounded-lg overflow-hidden cursor-pointer'>
+                    <div className='md:w-[300px] md:h-[300px] w-[200px] h-[200px] rounded-lg overflow-hidden cursor-pointer'>
                         <img src={img8} alt=""  className='w-full h-full'/>
                     </div>
                 </div>

@@ -6,16 +6,16 @@ import icon3 from '../../assets/icon3.png'
 
 const Explore = () => {
   return (
-    <section className=' bg-primary_color'>
+    <section className=' bg-primary_color py-[30px]'>
         <div className="container">
-            <div className="explore_main flex items-center ">
-                <div className='w-1/2'>
-                <img src={explore} alt="img" />
+            <div className="explore_main md:flex items-center ">
+                <div className='md:w-1/2'>
+                <img src={explore} alt="img" className='md:w-full w-[250px]'/>
                 </div>
-                <div className='w-1/2 text-white'>
-                <h2 className='font-bold text-[55px] font-heading'>Explore Endless Glamour</h2>
-                <h2 className='font-thin text-[35px] font-heading'>with Every Click</h2>
-                <p>Welcome to the World of Unparalleled Elegance
+                <div className='md:w-1/2 text-white'>
+                <h2 className='font-bold text-[25px] md:text-[55px]  font-heading'>Explore Endless Glamour</h2>
+                <h2 className='font-thin text-[18px] md:text-[35px] font-heading'>with Every Click</h2>
+                <p className='text-[13px] md:text-[16px]'>Welcome to the World of Unparalleled Elegance
                 At our online destination, we believe that glamour is more than just a look – it’s a lifestyle. From the moment you land on our page, you’re not just browsing; you’re stepping into a world where elegance and sophistication are at your fingertips. With every click, we invite you to explore a curated collection of luxurious products that promise to elevate your style and redefine your idea of beauty.</p>
                 <div className='flex items-center gap-[30px] py-[30px]'>
                     <div className='bg-white text-secondry_color flex item-center py-[10px] px-[20px] rounded-lg gap-[5px]'>

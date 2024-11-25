@@ -24,7 +24,7 @@ const Navbar = () => {
     },[])
   return (
     <>
-    <nav className='bg-secondry_color header top-0 left-0 w-full z-[999] px-[10px] md:px-0'>
+    <nav className='bg-secondry_color header top-0 left-0 w-full z-[999]'>
         <div className="container">
             <div className="nav_main">
                 <div className="nav_top flex justify-between items-center ">
@@ -32,8 +32,8 @@ const Navbar = () => {
                     <img src={logo} alt="logo" className=' h-[80px] cursor-pointer'/>
                     </div>
                     <div className='md:w-1/3 relative text-white'>
-                    <input type="text" placeholder='Search Here' className='focus:outline-none border-[2px] border-primary_color rounded-full w-full md:py-[10px] pl-[20px] pr-[48px] h-[50px] bg-transparent'  />
-                    <div className=' border-l-[2px] border-primary_color absolute top-0 right-[10px]  h-[50px] flex justify-center items-center p-[5px] text-[20px] cursor-pointer'>
+                    <input type="text" placeholder='Search Here' className='focus:outline-none border-[2px] border-primary_color rounded-full w-full  md:py-[10px] pl-[20px] pr-[48px] h-[40px] md:h-[50px] bg-transparent'  />
+                    <div className=' border-l-[2px] border-primary_color absolute top-0 right-[10px] h-[40px] md:h-[50px] flex justify-center items-center p-[5px] text-[20px] cursor-pointer'>
                     <HiSearch />
                     </div>
                     </div>
@@ -52,7 +52,9 @@ const Navbar = () => {
                 </div>
             </div>
         </div>
+        <div className='hidden md:block'>
         <Menu/>
+        </div>
     </nav>
     
     </>
