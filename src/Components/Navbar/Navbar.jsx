@@ -5,6 +5,7 @@ import { BsCart4 } from "react-icons/bs";
 import Menu from '../Menu/Menu';
 import { FiMenu } from "react-icons/fi";
 import { IoMdClose } from "react-icons/io";
+import SmallDeviceMenu from '../Menu/SmallDeviceMenu';
 
 
 
@@ -31,8 +32,8 @@ const Navbar = () => {
                     <div className='md:w-1/3'>
                     <img src={logo} alt="logo" className=' h-[80px] cursor-pointer'/>
                     </div>
-                    <div className='md:w-1/3 relative text-white'>
-                    <input type="text" placeholder='Search Here' className='focus:outline-none border-[2px] border-primary_color rounded-full w-full  md:py-[10px] pl-[20px] pr-[48px] h-[40px] md:h-[50px] bg-transparent'  />
+                    <div className={`md:w-1/3 relative text-white md:block duration-300 `}>
+                    <input type="text" placeholder='Search Here' className={`focus:outline-none border-[2px] border-primary_color rounded-full w-full  md:py-[10px] pl-[20px] pr-[48px] h-[40px] md:h-[50px] bg-transparent `}/>
                     <div className=' border-l-[2px] border-primary_color absolute top-0 right-[10px] h-[40px] md:h-[50px] flex justify-center items-center p-[5px] text-[20px] cursor-pointer'>
                     <HiSearch />
                     </div>
@@ -52,9 +53,12 @@ const Navbar = () => {
                 </div>
             </div>
         </div>
-        <div className='hidden md:block'>
-        <Menu/>
-        </div>
+              <div >
+                  <Menu />
+                  <div className={`${menu ? 'block' : 'hidden'}`}>
+                    <SmallDeviceMenu/>
+                  </div>
+              </div>
     </nav>
     
     </>
