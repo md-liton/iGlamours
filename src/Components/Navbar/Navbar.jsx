@@ -4,7 +4,6 @@ import { HiSearch } from "react-icons/hi";
 import { BsCart4 } from "react-icons/bs";
 import { FiMenu } from "react-icons/fi";
 import { IoMdClose } from "react-icons/io";
-import SmallDeviceMenu from '../Menu/SmallDeviceMenu';
 import Menu from '../Menu/Menu';
 import { IoIosArrowDown } from "react-icons/io";
 import { Link } from 'react-router-dom';
