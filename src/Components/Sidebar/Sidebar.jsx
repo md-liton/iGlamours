@@ -36,9 +36,9 @@ const Sidebar = () => {
 
   return (
       <div className='mr-[20px]'>
-      <div className=''>
-        <p className='font-semibold text-[18px] font-heading text-secondry_color py-[10px] border-b-[1px] mb-[10px]'>Filter by Catagory</p>
-        <select className='mt-[10px] w-full focus:outline-none border-[1px] border-primary_color px-[10px] rounded-[5px] py-[7px] '>
+      <div className='hidden md:block'>
+        <p className='font-semibold md:text-[18px] font-heading text-secondry_color py-[10px] border-b-[1px] mb-[10px]'>Filter by Catagory</p>
+        <select className='mt-[10px] md:w-full focus:outline-none border-[1px] border-primary_color px-[10px] rounded-[5px] py-[7px] '>
           <option >Default sorting</option>
           <option >Price: Low to High</option>
           <option >Price: High to Low</option>
@@ -52,15 +52,17 @@ const Sidebar = () => {
 
             <div className='py-[10px]'>
               <div className='border-b-[1px]'>
-                  <p className='font-semibold text-[18px] font-heading text-secondry_color py-[10px] '>Top rated products</p>
+                  <p className='font-semibold md:text-[18px] text-[13px] font-heading text-secondry_color py-[10px] '>Top rated products</p>
               </div>
 
-              <div className='flex items-center gap-[15px] py-[20px] border-b-[1px]'>
+              <div className='flex justify-center gap-[10px] md:block'>
+
+              <div className='md:flex items-center gap-[15px] py-[20px] border-b-[1px]'>
                 <div>
-                <img src={img} alt="img" className='w-[65px] h-[65px] rounded-lg'/>
+                <img src={img} alt="img" className='w-[65px] h-[65px] rounded-lg '/>
                 </div>
                 <div >
-                <p className='font-bold font-heading text-[14px]'>CPS Keratin Doctor Hair Treatment</p>
+                <p className='md:font-bold font-heading text-[14px]'>CPS Keratin Doctor Hair Treatment</p>
                 <div className='flex items-center gap-[1px] text-[#EABE12]'>
                 <FaStar />
                 <FaStar />
@@ -68,18 +70,18 @@ const Sidebar = () => {
                 <FaStar />
                 <FaStar />
                 </div>
-                <div className='flex gap-[15px]'>
+                <div className='flex md:gap-[15px] md:flex-row flex-col'>
                   <span className='text-[#A5A5A5]'><s>2200Tk</s></span>
                   <span className='text-[15px] font-bold font-heading text-primary_color'>1699TK</span>
                 </div>
                 </div>
               </div>
-              <div className='flex items-center gap-[15px] py-[20px] border-b-[1px]'>
+              <div className='md:flex items-center gap-[15px] py-[20px] border-b-[1px]'>
                 <div>
-                <img src={img} alt="img" className='w-[65px] h-[65px] rounded-lg'/>
+                <img src={img} alt="img" className='w-[65px] h-[65px] rounded-lg '/>
                 </div>
                 <div >
-                <p className='font-bold font-heading text-[14px]'>CPS Keratin Doctor Hair Treatment</p>
+                <p className='md:font-bold font-heading text-[14px]'>CPS Keratin Doctor Hair Treatment</p>
                 <div className='flex items-center gap-[1px] text-[#EABE12]'>
                 <FaStar />
                 <FaStar />
@@ -87,18 +89,18 @@ const Sidebar = () => {
                 <FaStar />
                 <FaStar />
                 </div>
-                <div className='flex gap-[15px]'>
+                <div className='flex md:gap-[15px] md:flex-row flex-col'>
                   <span className='text-[#A5A5A5]'><s>2200Tk</s></span>
                   <span className='text-[15px] font-bold font-heading text-primary_color'>1699TK</span>
                 </div>
                 </div>
               </div>
-              <div className='flex items-center gap-[15px] py-[20px] border-b-[1px]'>
+              <div className='md:flex items-center gap-[15px] py-[20px] border-b-[1px]'>
                 <div>
-                <img src={img} alt="img" className='w-[65px] h-[65px] rounded-lg'/>
+                <img src={img} alt="img" className='w-[65px] h-[65px] rounded-lg '/>
                 </div>
                 <div >
-                <p className='font-bold font-heading text-[14px]'>CPS Keratin Doctor Hair Treatment</p>
+                <p className='md:font-bold font-heading text-[14px]'>CPS Keratin Doctor Hair Treatment</p>
                 <div className='flex items-center gap-[1px] text-[#EABE12]'>
                 <FaStar />
                 <FaStar />
@@ -106,12 +108,15 @@ const Sidebar = () => {
                 <FaStar />
                 <FaStar />
                 </div>
-                <div className='flex gap-[15px]'>
+                <div className='flex md:gap-[15px] md:flex-row flex-col'>
                   <span className='text-[#A5A5A5]'><s>2200Tk</s></span>
                   <span className='text-[15px] font-bold font-heading text-primary_color'>1699TK</span>
                 </div>
                 </div>
               </div>
+
+              </div>
+
 
 
             </div>

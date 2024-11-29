@@ -32,6 +32,20 @@ const Navbar = () => {
         })
 
     },[])
+
+    useEffect(()=>{
+        if(!menu){
+            setMakeup(false)
+            setSkin(false)
+            setHair(false)
+            setPersonalCare(false)
+            setKbeauty(false)
+            setMom(false)
+            setUndergarments(false)
+        }
+    },[menu])
+
+
   return (
     <>
     <nav className='bg-secondry_color header top-0 left-0 w-full z-[999]'>
