@@ -12,7 +12,7 @@ const Advertising = () => {
   return (
     <section className={`py-[30px] ${close && 'hidden'}`}>
         <div className="container">
-            <div className="advertising_main w-full h-[100px] md:h-[200px] relative">
+            <div className="advertising_main w-full h-[100px] lg:h-[200px] relative">
                 <img src={adv} className='h-full w-full' alt="adv" />
                 <IoMdClose  className='absolute top-[10px] right-[10px] cursor-pointer ' onClick={(e)=>(setClose(true))}/>
             </div>

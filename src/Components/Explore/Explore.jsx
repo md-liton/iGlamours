@@ -13,16 +13,16 @@ const Explore = () => {
                 <img src={explore} alt="img" className='md:w-full w-[250px]'/>
                 </div>
                 <div className='md:w-1/2 text-white'>
-                <h2 className='font-bold text-[25px] md:text-[55px]  font-heading'>Explore Endless Glamour</h2>
-                <h2 className='font-thin text-[18px] md:text-[35px] font-heading'>with Every Click</h2>
-                <p className='text-[13px] md:text-[16px]'>Welcome to the World of Unparalleled Elegance
+                <h2 className='font-bold text-[25px] lg:text-[55px]  font-heading'>Explore Endless Glamour</h2>
+                <h2 className='font-thin text-[18px] lg:text-[35px] font-heading'>with Every Click</h2>
+                <p className='text-[13px] lg:text-[16px]'>Welcome to the World of Unparalleled Elegance
                 At our online destination, we believe that glamour is more than just a look – it’s a lifestyle. From the moment you land on our page, you’re not just browsing; you’re stepping into a world where elegance and sophistication are at your fingertips. With every click, we invite you to explore a curated collection of luxurious products that promise to elevate your style and redefine your idea of beauty.</p>
                 <div className='flex items-center gap-[30px] py-[30px]'>
                     <div className='bg-white text-secondry_color flex item-center py-[10px] px-[20px] rounded-lg gap-[5px]'>
                         <div className=''>
                             <img src={icon1} alt="icon"  />
                         </div>
-                        <div className='font-bold text-[15px] font-heading'>
+                        <div className='font-bold md:text-[13px] lg:text-[15px] font-heading'>
                             <p >Lasting</p>
                             <p >Formulas</p>
                         </div>
@@ -31,7 +31,7 @@ const Explore = () => {
                         <div className=''>
                             <img src={icon2} alt="icon"  />
                         </div>
-                        <div className='font-bold text-[15px] font-heading'>
+                        <div className='font-bold md:text-[13px] lg:text-[15px]  font-heading'>
                             <p >Face skin</p>
                             <p >Protection</p>
                         </div>
@@ -40,7 +40,7 @@ const Explore = () => {
                         <div className=''>
                             <img src={icon3} alt="icon"  />
                         </div>
-                        <div className='font-bold text-[15px] font-heading'>
+                        <div className='font-bold md:text-[13px] lg:text-[15px]  font-heading'>
                             <p >Eye care</p>
                             <p >Products</p>
                         </div>

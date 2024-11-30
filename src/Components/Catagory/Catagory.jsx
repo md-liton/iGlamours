@@ -13,7 +13,7 @@ const Catagory = () => {
     <section className='md:py-[50px] py-[30px]'>
         <div className="container">
             <div className="catagory_main">
-            <h2 className='font-bold md:text-[55px] text-[45px] font-heading text-secondry_color text-center py-[20px]'>Explore Endless Glamour</h2>
+            <h2 className='font-bold lg:text-[55px] text-[45px] font-heading text-secondry_color text-center py-[20px]'>Explore Endless Glamour</h2>
                 <div className='flex items-center gap-[20px] flex-wrap justify-center'>
                     <div className='md:w-[300px] md:h-[300px] w-[200px] h-[200px] rounded-lg overflow-hidden cursor-pointer'>
                         <img src={img1} alt=""  className='w-full h-full'/>

@@ -44,14 +44,14 @@ const Allproducts = () => {
       };
 
   return (
-      <section className='md:py-[50px] py-[20px] bg-secondry_color'>
+      <section className='md:py-[50px] py-[20px] bg-secondry_color overflow-x-hidden'>
           <div className="container">
               <div className="products_main ">
 
 
 
 
-                <h1 className='text-primary_color md:text-[40px] text-[25px] font-bold font-heading px-[10px] mt-[30px]'>Makeup</h1>
+                <h1 className='text-primary_color lg:text-[40px] text-[25px] font-bold font-heading px-[10px] mt-[30px]'>Makeup</h1>
 
                   <Slider {...settings} >
                       <div className='border rounded-[20px] cursor-pointer p-[4px] md:p-[15px]  bg-white '>
@@ -140,7 +140,7 @@ const Allproducts = () => {
 
 
 
-                  <h1 className='text-primary_color md:text-[40px] text-[25px] font-bold font-heading px-[10px] mt-[30px]'>Skin Care</h1>
+                  <h1 className='text-primary_color lg:text-[40px] text-[25px] font-bold font-heading px-[10px] mt-[30px]'>Skin Care</h1>
                   <Slider {...settings} >
                       <div className='border rounded-[20px] cursor-pointer p-[4px] md:p-[15px]  bg-white '>
                           <div className=' flex justify-center items-center '>
@@ -225,7 +225,7 @@ const Allproducts = () => {
                      
                   </Slider>
 
-                  <h1 className='text-primary_color md:text-[40px] text-[25px] font-bold font-heading px-[10px] mt-[30px]'>K-Beauty</h1>
+                  <h1 className='text-primary_color lg:text-[40px] text-[25px] font-bold font-heading px-[10px] mt-[30px]'>K-Beauty</h1>
 
 
                   <Slider {...settings} >

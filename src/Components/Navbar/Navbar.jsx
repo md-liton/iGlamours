@@ -6,13 +6,15 @@ import { FiMenu } from "react-icons/fi";
 import { IoMdClose } from "react-icons/io";
 import Menu from '../Menu/Menu';
 import { IoIosArrowDown } from "react-icons/io";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 
 
 
 const Navbar = () => {
+
+    const navigate = useNavigate()
 
     const [menu,setMenu]=useState(false)
     const [makeup,setMakeup]=useState(false)
@@ -22,8 +24,6 @@ const Navbar = () => {
     const [kbeauty,setKbeauty]=useState(false)
     const [mom,setMom]=useState(false)
     const [undergarments,setUndergarments]=useState(false)
-
-
 
     useEffect(()=>{
         window.addEventListener("scroll",function(){
@@ -45,15 +45,19 @@ const Navbar = () => {
         }
     },[menu])
 
+   
+
 
   return (
     <>
-    <nav className='bg-secondry_color header top-0 left-0 w-full z-[999]'>
+    <nav className={`bg-secondry_color header top-0 left-0 w-full z-[999] `}>
         <div className="container">
-            <div className="nav_main">
+            <div className="nav_main ">
                 <div className="nav_top flex justify-between items-center ">
                     <div className='md:w-1/3'>
+                    <div onClick={()=>navigate('/')}>
                     <img src={logo} alt="logo" className=' h-[80px] cursor-pointer'/>
+                    </div>
                     </div>
                     <div className={`md:w-1/3 relative text-white md:block duration-300 `}>
                     <input type="text" placeholder='Search Here' className={`focus:outline-none border-[2px] border-primary_color rounded-full w-full  md:py-[10px] pl-[20px] pr-[48px] h-[40px] md:h-[50px] bg-transparent `}/>

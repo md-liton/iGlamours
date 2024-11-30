@@ -21,7 +21,7 @@ const Banner = () => {
     autoplaySpeed: 1500,
   };
   return (
-    <section className='overflow-hidden h-[250px] md:h-[490px] w-full'>
+    <section className='overflow-hidden h-[250px] lg:h-[490px] w-full'>
       <Slider {...settings} className='m-[-10px]'>
         <div className="banner_main h-[250px]  md:h-[490px] w-full">
           <img src={banner} className='w-full h-full' alt="img" />
