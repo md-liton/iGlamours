@@ -29,11 +29,11 @@ const Login = () => {
     //     setPasswordErr('');
     // }
   return (
-    <section className="registration md:py-[60px] py-[30px]">
+    <section className=" md:py-[60px] py-[30px]">
     {/* <ToastContainer position="top-center" theme="dark"/> */}
     <div className="container">
 
-        <div className="registration_main  flex justify-center items-center ">
+        <div className="loin_main  flex justify-center items-center ">
         <div>
         <h1 className="font-nunito font-bold text-[35px] text-secondary_color">Login to your account!</h1>
                     <div className="mt-[35px] relative">

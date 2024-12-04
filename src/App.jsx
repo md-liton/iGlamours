@@ -56,6 +56,7 @@ import BabyCare from "./Components/SubCatagory/BabyCare";
 import Bra from "./Components/SubCatagory/Bra";
 import Panty from "./Components/SubCatagory/Panty";
 import Login from "./Components/Login/Login";
+import Registration from "./Components/Registration/Registration";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -149,6 +150,7 @@ const router = createBrowserRouter(
         <Route path="/essential" element={<Essential />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/registration" element={<Registration />} />
       </Route>
 
       
