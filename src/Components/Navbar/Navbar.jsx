@@ -68,7 +68,9 @@ const Navbar = () => {
                     <div className='md:w-1/3 '>
                     <div className='hidden md:block'>
                     <div className=' flex justify-end items-center gap-[15px]'>
+                        <Link to='/login'>
                     <div className=' py-[5px] px-[10px] rounded-lg text-paragraph font-semibold cursor-pointer border-[2px] border-primary_color hover:bg-primary_color duration-300 text-white '>Login</div>
+                        </Link>
                     <div className=' py-[5px] px-[10px] rounded-lg text-paragraph font-semibold cursor-pointer border-[2px] border-primary_color hover:bg-transparent duration-300 text-white flex items-center gap-[10px] bg-primary_color'> <BsCart4 /> Cart</div>
                     </div>
                     </div>
