@@ -78,11 +78,11 @@ const Menu = () => {
       <div className="container">
         <div className="header_main nav_bottom text-paragraph font-semibold cursor-pointe text-white py-[10px]">
           <div className=' flex justify-between items-center '>
-            <Link to='/' className={`cursor-pointer  rounded-full py-[5px] px-[10px] md:text-[8px] lg:text-[10px] xl:text-[16px]  ${location.pathname == '/' && 'text-primary_color bg-[#FABFE2]'}`}  >All products</Link>
+            <Link to='/' className={`cursor-pointer  rounded-full py-[5px] px-[10px] md:text-[8px] lg:text-[10px] xl:text-[15px]  ${location.pathname == '/' && 'text-primary_color bg-[#FABFE2]'}`}  >All products</Link>
 
 
             <Link to='/makeup' className={`makeup cursor-pointer  rounded-full py-[5px] px-[10px] duration-300 relative   ${location.pathname == '/makeup' && 'text-primary_color bg-[#FABFE2] '}`}>
-              <div className='flex items-center gap-[5px] md:text-[8px] lg:text-[10px] xl:text-[16px]'>MAKEUP <IoIosArrowDown /></div>
+              <div className='flex items-center gap-[5px] md:text-[8px] lg:text-[10px] xl:text-[15px]'>MAKEUP <IoIosArrowDown /></div>
               <div className='makeup_item absolute text-white text-[14px] font-thin bg-secondry_color top-[30px] w-[150px] left-[-10px] flex justify-center items-center rounded-lg hidden duration-400 z-[99]'>
                 <ul className=' p-[20px] '>
                   <li className='py-[5px] hover:text-primary_color duration-300'><Link to='/makeup/face'>Face</Link></li>
@@ -100,7 +100,7 @@ const Menu = () => {
 
 
             <Link to='skincare' className={`skincare cursor-pointer  rounded-full py-[5px] px-[10px] relative  ${location.pathname == '/skincare' && 'text-primary_color bg-[#FABFE2]'}`} >
-              <div className='flex items-center gap-[5px] md:text-[8px] lg:text-[10px] xl:text-[16px]'>SKIN CARE <IoIosArrowDown /></div>
+              <div className='flex items-center gap-[5px] md:text-[8px] lg:text-[10px] xl:text-[15px]'>SKIN CARE <IoIosArrowDown /></div>
               <div className='skincare_item absolute text-white text-[14px] font-thin bg-secondry_color top-[30px] w-[200px] left-[-10px] flex justify-center items-center rounded-lg hidden duration-400 z-[99]'>
                 <ul className=' p-[20px] '>
                   <li className='py-[5px] hover:text-primary_color duration-300'><Link to='/skincare/face'>Face</Link></li>
@@ -112,7 +112,7 @@ const Menu = () => {
             </Link>
 
             <Link to='/hair' className={`hair cursor-pointer  rounded-full py-[5px] px-[10px] relative ${location.pathname == '/hair' && 'text-primary_color bg-[#FABFE2]'}`} >
-              <div className='flex items-center gap-[5px] md:text-[8px] lg:text-[10px] xl:text-[16px]'>HAIR <IoIosArrowDown /></div>
+              <div className='flex items-center gap-[5px] md:text-[8px] lg:text-[10px] xl:text-[15px]'>HAIR <IoIosArrowDown /></div>
               <div className='hair_item absolute text-white text-[14px] font-thin bg-secondry_color top-[30px] w-[200px] left-[-10px] flex justify-center items-center rounded-lg hidden duration-400 z-[99]'>
                 <ul className=' p-[20px] '>
                   <li className='py-[5px] hover:text-primary_color duration-300'><Link to='/hair/haircare'>Hair Care</Link></li>
@@ -125,7 +125,7 @@ const Menu = () => {
 
 
             <Link to='/personalcare' className={`personalcare cursor-pointer  rounded-full py-[5px] px-[10px] relative  ${location.pathname == '/personalcare' && 'text-primary_color bg-[#FABFE2]'}`} >
-              <div className='flex items-center gap-[5px] md:text-[8px] lg:text-[10px] xl:text-[16px]'>PERSONAL CARE <IoIosArrowDown /></div>
+              <div className='flex items-center gap-[5px] md:text-[8px] lg:text-[10px] xl:text-[15px]'>PERSONAL CARE <IoIosArrowDown /></div>
               <div className='personalcare_item absolute text-white text-[14px] font-thin bg-secondry_color top-[30px] w-[250px] left-[-10px] flex justify-center items-center rounded-lg hidden duration-400 z-[99]'>
                 <ul className=' p-[20px] '>
                   <li className='py-[5px] hover:text-primary_color duration-300'><Link to='/personalcare/Bath&Shower'>Bath & Shower</Link></li>
@@ -136,7 +136,7 @@ const Menu = () => {
 
 
             <Link to='/kbeauty' className={`kbeauty cursor-pointer  rounded-full py-[5px] px-[10px] relative  ${location.pathname == '/kbeauty' && 'text-primary_color bg-[#FABFE2]'}`}>
-              <div className='flex items-center gap-[5px] md:text-[8px] lg:text-[10px] xl:text-[16px]'>K-BEAUTY <IoIosArrowDown /></div>
+              <div className='flex items-center gap-[5px] md:text-[8px] lg:text-[10px] xl:text-[15px]'>K-BEAUTY <IoIosArrowDown /></div>
               <div className='kbeauty_item absolute text-white text-[14px] font-thin bg-secondry_color top-[30px] w-[200px] left-[-10px] flex justify-center items-center rounded-lg hidden duration-400 z-[99]'>
                 <ul className=' p-[20px] '>
                   <li className='py-[5px] hover:text-primary_color duration-300'><Link to='/kbeauty/moisturizer'>Moisturizer</Link></li>
@@ -156,7 +156,7 @@ const Menu = () => {
 
 
             <Link to='/mom&baby' className={`mom cursor-pointer  rounded-full py-[5px] px-[10px] relative  ${location.pathname == '/mom&baby' && 'text-primary_color bg-[#FABFE2]'}`} >
-              <div className='flex items-center gap-[5px] md:text-[8px] lg:text-[10px] xl:text-[16px]'>MOM & BABY <IoIosArrowDown /></div>
+              <div className='flex items-center gap-[5px] md:text-[8px] lg:text-[10px] xl:text-[15px]'>MOM & BABY <IoIosArrowDown /></div>
               <div className='mom_item absolute text-white text-[14px] font-thin bg-secondry_color top-[30px] w-[200px] left-[-10px] flex justify-center items-center rounded-lg hidden duration-400 z-[99]'>
                 <ul className=' p-[20px] '>
                   <li className='py-[5px] hover:text-primary_color duration-300'><Link to='/mom&baby/babyproducts'>Baby Products</Link></li>
@@ -173,7 +173,7 @@ const Menu = () => {
             </Link>
 
             <Link to='/undergarments' className={`undergarments cursor-pointer  rounded-full py-[5px] px-[10px] relative ${location.pathname == '/undergarments' && 'text-primary_color bg-[#FABFE2]'}`}>
-              <div className='flex items-center gap-[5px] md:text-[8px] lg:text-[10px] xl:text-[16px]'>UNDERGARMENTS <IoIosArrowDown /></div>
+              <div className='flex items-center gap-[5px] md:text-[8px] lg:text-[10px] xl:text-[15px]'>UNDERGARMENTS <IoIosArrowDown /></div>
               <div className='undergarments_item absolute text-white text-[14px] font-thin bg-secondry_color top-[30px] w-[200px] left-[-10px] flex justify-center items-center rounded-lg hidden duration-400 z-[99]'>
                 <ul className=' p-[20px] '>
                   <li className='py-[5px] hover:text-primary_color duration-300'><Link to='/undergarments/bra'>Bra</Link></li>
@@ -183,9 +183,9 @@ const Menu = () => {
             </Link>
 
 
-            <Link to='/essential' className={`cursor-pointer  rounded-full py-[5px] px-[10px] md:text-[8px] lg:text-[10px] xl:text-[16px]  ${location.pathname == '/essential' && 'text-primary_color bg-[#FABFE2]'}`} >ESSENTIAL</Link>
+            <Link to='/essential' className={`cursor-pointer  rounded-full py-[5px] px-[10px] md:text-[8px] lg:text-[10px] xl:text-[15px]  ${location.pathname == '/essential' && 'text-primary_color bg-[#FABFE2]'}`} >ESSENTIAL</Link>
 
-            <Link to='/blog' className={`cursor-pointer  rounded-full py-[5px] md:text-[8px] lg:text-[10px] xl:text-[16px]  ${location.pathname == '/blog' && 'text-primary_color bg-[#FABFE2]'}`} >BLOG</Link>
+            <Link to='/blog' className={`cursor-pointer  rounded-full py-[5px] px-[10px] md:text-[8px] lg:text-[10px] xl:text-[15px] ${location.pathname == '/blog' && 'text-primary_color bg-[#FABFE2]'}`} >BLOG</Link>
 
 
           </div>
