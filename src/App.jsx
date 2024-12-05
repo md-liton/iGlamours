@@ -57,6 +57,7 @@ import Bra from "./Components/SubCatagory/Bra";
 import Panty from "./Components/SubCatagory/Panty";
 import Login from "./Components/Login/Login";
 import Registration from "./Components/Registration/Registration";
+import ForgotPassword from "./Components/ForgotPassword/ForgotPassword";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -151,6 +152,7 @@ const router = createBrowserRouter(
         <Route path="/blog" element={<Blog />} />
         <Route path="/login" element={<Login />} />
         <Route path="/registration" element={<Registration />} />
+        <Route path="/resetpassword" element={<ForgotPassword/>} />
       </Route>
 
       

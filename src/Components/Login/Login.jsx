@@ -80,7 +80,7 @@ const Login = () => {
 
                     <p className="mt-[10px] text-center text-[15px] font-normal font-open text-secondary_color">Don’t have an account ? <Link to='/registration' className="font-bold text-[#EA6C00] cursor-pointer">Sign Up</Link ></p>
                     <div className='text-center'>
-                    <Link to='/forgotpassword' className="mt-[10px]  text-[15px] font-normal font-open text-secondary_color cursor-pointer">forgot password</Link>
+                    <Link to='/resetpassword' className="mt-[10px]  text-[15px] font-normal font-open text-secondary_color cursor-pointer">forgot password</Link>
                     </div>
         </div>
         </div>
