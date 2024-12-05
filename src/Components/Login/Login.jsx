@@ -35,7 +35,7 @@ const Login = () => {
 
         <div className="loin_main  flex justify-center items-center ">
         <div>
-        <h1 className="font-nunito font-bold text-[35px] text-secondary_color">Login to your account!</h1>
+        <h1 className=" font-bold text-[35px] text-secondary_color">Login to your account!</h1>
                     <div className="mt-[35px] relative">
                         <p className=" bg-white  text-[16px] font-bold font-nunito text-[#585D8E]">Email Address</p>
                         <input  className=" w-full py-[10px] border-b border-[#B8B9CE] text-[20px] font-bold font-nunito text-secondary_color focus:outline-none" type="email" placeholder="Email"/>
